@@ -16,7 +16,6 @@ import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
   description:
@@ -26,21 +25,8 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-        <div className='relative overflow-hidden rounded-4xl p-2'>
-      <Image
-        src="/banner.jpg"
-        alt="Golden Gate Bridge"
-        width={1200}
-        height={800}
-        layout="responsive"
-        priority
-        className='rounded-4xl'
-      />
-      {/* Ensure the gradient fully covers the image */}
-      <Gradient className="absolute inset-2 rounded-4xl ring-1 ring-black/5 ring-inset opacity-70" />
-    </div>
-      
-      <Container className="absolute inset-0">
+      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <Container className="relative">
         <Navbar
           banner={
             <Link
