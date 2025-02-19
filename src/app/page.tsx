@@ -43,7 +43,7 @@ function Hero() {
             Close every deal.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            5th Bridge helps you sell more by revealing sensitive information about
+            Radiant helps you sell more by revealing sensitive information about
             your customers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
