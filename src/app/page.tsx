@@ -34,9 +34,10 @@ function Hero() {
         height={800}
         layout="responsive"
         priority
+        className='rounded-b-4xl'
       />
       {/* Ensure the gradient fully covers the image */}
-      <Gradient className="absolute inset-2 rounded-4xl ring-1 ring-black/5 ring-inset opacity-70" />
+      <Gradient className="absolute inset-0 rounded-b-4xl ring-1 ring-black/5 ring-inset opacity-70" />
     </div>
       
       <Container className="absolute inset-0">
