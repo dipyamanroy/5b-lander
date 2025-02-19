@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -27,7 +28,10 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body className="text-gray-950 antialiased">
+          {children}
+          <Analytics />
+        </body>
     </html>
   )
 }
