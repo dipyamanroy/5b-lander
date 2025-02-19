@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
+import Image from 'next/image'
 
 const links = [
   { href: '/pricing', label: 'Pricing' },
@@ -83,7 +84,13 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
-                <Logo className="h-9" />
+                {/* <Logo className="h-9" /> */}
+                <Image
+                  src="/logo.png"
+                  alt="5th Bridge Logo"
+                  width={127}
+                  height={34}
+                />
               </Link>
             </PlusGridItem>
             {banner && (
