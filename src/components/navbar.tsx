@@ -15,7 +15,7 @@ import Image from 'next/image'
 const links = [
   { href: '/pricing', label: 'Pricing' },
   { href: '/company', label: 'Company' },
-  { href: '/blog', label: 'Blog' },
+  // { href: '/blog', label: 'Blog' },
   { href: '/login', label: 'Login' },
 ]
 
