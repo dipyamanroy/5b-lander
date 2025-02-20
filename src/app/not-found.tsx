@@ -8,13 +8,6 @@ import { Button } from "@/components/button";
 export default function NotFound() {
   return (
     <main className="relative overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover"
-        style={{ backgroundImage: 'url(404.png)' }}
-      >
-        <div className="absolute inset-0 bg-white/70"></div>
-      </div>
-
       <GradientBackground />
 
       <Container className="relative mt-68 my-120 text-center">
