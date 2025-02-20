@@ -49,9 +49,10 @@ function Hero() {
           }
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-7xl/[0.8]">
-          Specialists in Digital Transformation
-          </h1>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight text-gray-950 leading-tight">
+  Specialists in Digital Transformation
+</h1>
+
           <p className="mt-8 max-w text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             5th Bridge brings in more efficiency to your business, <br></br>so you can focus on what you do best, serving your customers.
           </p>
