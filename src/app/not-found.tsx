@@ -26,7 +26,7 @@ export default function NotFound() {
         </Lead>
         <div className="m-10">
           <a href="/" className="">
-            <Button variant="outline">Go Home</Button>
+            <Button variant="secondary">Go Home</Button>
           </a>
         </div>
       </Container>
