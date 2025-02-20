@@ -20,6 +20,8 @@ export default function RootLayout({
         <meta property="og:title" content="5th Bridge - Specialists in Digital Transformation" />
         <meta property="og:description" content="We help businesses navigate the digital landscape with expertise and innovation." />
         <meta property="og:image" content="https://i.ibb.co/0RsFPwg0/Screenshot-from-2025-02-20-21-44-38.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://5b-lander.vercel.app" />
         <meta property="og:type" content="website" />
 
