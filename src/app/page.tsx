@@ -154,28 +154,28 @@ function DarkBentoSection() {
           How we work on the <br></br>Cutting Edge of AI
         </Heading>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
           <BentoCard
             dark
-            eyebrow="Networking"
-            title="Sell at the speed of light"
-            description="Our 5th BridgeAI chat assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            eyebrow="Human Resources"
+            title="Have AI Answer all your employees' HR queries with 1stAskHR"
+            description="Our 5th Bridge AI chat assistant 1stAskHR analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Integrations"
-            title="Meet leads where they are"
+            eyebrow="Security"
+            title="Protect every communication with Addu Firewall"
             description="With thousands of integrations, no one will be able to escape your cold outreach."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
           />
-          <BentoCard
+          {/* <BentoCard
             dark
             eyebrow="Meetings"
             title="Smart call scheduling"
@@ -193,7 +193,7 @@ function DarkBentoSection() {
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
-          />
+          /> */}
         </div>
       </Container>
     </div>
