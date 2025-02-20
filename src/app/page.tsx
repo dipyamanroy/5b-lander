@@ -38,20 +38,12 @@ function Hero() {
 </div>
       <Container className="relative">
         <Navbar
-          banner={
-            <Link
-              href="/"
-              className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
-            >
-              Redirect to exciting news about the company
-              <ChevronRightIcon className="size-4" />
-            </Link>
-          }
+          
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight text-gray-950 leading-tight">
-  Specialists in Digital Transformation
-</h1>
+          Specialists in Digital Transformation
+        </h1>
 
           <p className="mt-8 max-w text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             5th Bridge brings in more efficiency to your business, <br></br>so you can focus on what you do best, serving your customers.

@@ -9,7 +9,6 @@ export default function NotFound() {
   return (
     <main className="relative overflow-hidden">
       <GradientBackground />
-
       <Container className="relative mt-68 my-120 text-center">
         <Heading as="h1" className="text-6xl font-bold text-gray-900">
           404
