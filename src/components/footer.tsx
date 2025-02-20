@@ -59,7 +59,7 @@ function Sitemap() {
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Research</SitemapHeading>
+        <SitemapHeading>Products</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="https://1staskhr.com">1stAskHR</SitemapLink>
           <SitemapLink href="#">Addu AI Firewall</SitemapLink>

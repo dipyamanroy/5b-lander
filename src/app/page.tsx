@@ -98,7 +98,7 @@ function BentoSection() {
         
         <BentoCard
           eyebrow="Dynamics"
-          title="CRM/ERP"
+          title="CRM"
           description="We specialize in complex system integration with Customer relationship management (CRM) systems. Our team has an expertise of 25 years in developing solutions on Dynamics."
           graphic={
             <div className="h-80 bg-[url(/screenshots/dynamics.png)] bg-[size:1000px_560px] bg-[left_-10px_top_-10px] bg-no-repeat" />
@@ -109,7 +109,7 @@ function BentoSection() {
         <BentoCard
           eyebrow="3D"
           title="CPQ"
-          description="The future of digital user experience is visual. Interactive 3D models display objects within space in ways text and images simply cannot. We work on a cutting edge 3D platform that uses Unity. "
+          description="Interactive 3D models in Configure Price Quote (CPQ) for display objects within space in ways text and images simply cannot. We work on a cutting edge 3D platform that uses Unity. "
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/cpq.png)] bg-[size:1100px_650px] bg-[left_-500px_top_-100px] bg-no-repeat" />
           }
