@@ -7,23 +7,27 @@ import { Button } from "@/components/button";
 
 export default function NotFound() {
   return (
-    <main className="overflow-hidden">
+    <main className="relative overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover"
+        style={{ backgroundImage: 'url(404.png)' }}
+      >
+        <div className="absolute inset-0 bg-white/70"></div>
+      </div>
+
       <GradientBackground />
-      
-      <Container className="mt-68 my-32 text-center">
+
+      <Container className="relative mt-68 my-120 text-center">
         <Heading as="h1" className="text-6xl font-bold text-gray-900">
           404
         </Heading>
         <Lead className="mt-4 text-gray-600">
-          Oops! The page you are looking for does not exist.
+          Oops! We haven't rendered that part yet.
         </Lead>
         <div className="m-10">
-        <a
-          href="/"
-          className=""
-        >
+          <a href="/" className="">
             <Button variant="outline">Go Home</Button>
-        </a>
+          </a>
         </div>
       </Container>
     </main>
