@@ -20,7 +20,7 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   description:
-    '5th Bridge helps you sell more by revealing sensitive information about your customers.',
+    'Specialists in Digital Transformation.',
 }
 
 function Hero() {
@@ -49,17 +49,16 @@ function Hero() {
           }
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-8xl/[0.9]">
-            Close every deal.
+          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-7xl/[0.8]">
+          Specialists in Digital Transformation
           </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            5th Bridge helps you sell more by revealing sensitive information about
-            your customers.
+          <p className="mt-8 max-w text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+            5th Bridge brings in more efficiency to your business, <br></br>so you can focus on what you do best, serving your customers.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
+            <Button href="mailto:rohit@fifthbridgetech.com">Contact Us</Button>
+            <Button variant="secondary" href="/careers">
+              Careers
             </Button>
           </div>
         </div>
@@ -88,60 +87,49 @@ function FeatureSection() {
 
 function BentoSection() {
   return (
-    <Container>
-      <Subheading>Sales</Subheading>
+    <div className='mb-32'>
+<Container>
+      <Subheading>Services</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        How we fit in to your business.
+        How we help your business
       </Heading>
 
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
+        
         <BentoCard
-          eyebrow="Insight"
-          title="Get perfect clarity"
-          description="5th Bridge uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          eyebrow="Dynamics"
+          title="CRM/ERP"
+          description="We specialize in complex system integration with Customer relationship management (CRM) systems. Our team has an expertise of 25 years in developing solutions on Dynamics."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/dynamics.png)] bg-[size:1000px_560px] bg-[left_-10px_top_-10px] bg-no-repeat" />
           }
           fade={['bottom']}
-          className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
-        />
-        <BentoCard
-          eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
-          graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
-          }
-          fade={['bottom']}
-          className="lg:col-span-3 lg:rounded-tr-4xl"
-        />
-        <BentoCard
-          eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
-          graphic={
-            <div className="flex size-full pt-10 pl-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
-          }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Source"
-          title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
-          graphic={<LogoCluster />}
+          eyebrow="3D"
+          title="CPQ"
+          description="The future of digital user experience is visual. Interactive 3D models display objects within space in ways text and images simply cannot. We work on a cutting edge 3D platform that uses Unity. "
+          graphic={
+            <div className="absolute inset-0 bg-[url(/screenshots/cpq.png)] bg-[size:1100px_650px] bg-[left_-500px_top_-100px] bg-no-repeat" />
+          }
+          fade={['bottom']}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Limitless"
-          title="Sell globally"
-          description="5th Bridge helps you sell in locations currently under international embargo."
-          graphic={<Map />}
+          eyebrow="Application Development"
+          title="Custom Applications"
+          description="We help develop and maintain full-stack applications written in C#, ASP.NET, React (Javascript) and other custom tech stacks as per our clients demand."
+          graphic={
+            <div className="absolute inset-0 bg-[url(/screenshots/app.jpg)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
+          }
+          fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
     </Container>
+    </div>
+    
   )
 }
 
@@ -149,9 +137,9 @@ function DarkBentoSection() {
   return (
     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
       <Container>
-        <Subheading dark>Research</Subheading>
+        <Subheading dark>AI Research</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          How we work on the <br></br>Cutting Edge of AI
+          Working on the Cutting Edge
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
@@ -170,7 +158,7 @@ function DarkBentoSection() {
           <BentoCard
             dark
             eyebrow="Security"
-            title="Protect every communication with Addu Firewall"
+            title="Protect every communication with Addu AI Firewall"
             description="Our AI-driven security detects unknown threats by learning from known attacks while proactively blocking malicious access. "
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
@@ -209,13 +197,12 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          {/* <FeatureSection /> */}
+        <div className="bg-gradient-to-b from-white via-gray-100 to-white py-32">
           <BentoSection />
+          <DarkBentoSection />
         </div>
-        <DarkBentoSection />
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   )

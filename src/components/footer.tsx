@@ -14,17 +14,14 @@ function CallToAction() {
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           Ready to dive in?
-          <br />
-          Start your free trial today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Get the our services for your business and serve your customers better.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
+        <Button className="w-full sm:w-auto" href="mailto:rohit@fifthbridgetech.com">
+          Contact Us
         </Button>
       </div>
     </div>
@@ -54,30 +51,37 @@ function Sitemap() {
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          <SitemapLink href="/pricing">CRM/ERP</SitemapLink>
+          <SitemapLink href="#">CPQ</SitemapLink>
+          <SitemapLink href="#">Custom Development</SitemapLink>
+        </SitemapLinks>
+      </div>
+      <div>
+        <SitemapHeading>Research</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="https://1staskhr.com">1stAskHR</SitemapLink>
+          <SitemapLink href="#">Addu AI Firewall</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Company</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="/about-us">About Us</SitemapLink>
+          <SitemapLink href="/careers">Careers</SitemapLink>
+          {/* <SitemapLink href="/blog">Blog</SitemapLink> */}
         </SitemapLinks>
       </div>
-      <div>
+      {/* <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="#">Help center</SitemapLink>
           <SitemapLink href="#">Community</SitemapLink>
         </SitemapLinks>
-      </div>
+      </div> */}
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>Legal</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="#">Terms of service</SitemapLink>
           <SitemapLink href="#">Privacy policy</SitemapLink>

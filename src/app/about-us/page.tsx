@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'About the company.',
 }
 
 function Header() {
@@ -129,34 +129,26 @@ function Person({
 
 function Team() {
   return (
-    <Container className="my-32">
-      <Subheading>Meet the team</Subheading>
+    <Container className="mt-16 mb-32">
+      <Subheading>Meet the founder</Subheading>
       <Heading as="h3" className="mt-2">
-        Founded by an all-star team.
+        Our Founding Story
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        Radiant is founded by two of the best sellers in the business and backed
-        by investors who look the other way.
+        5th Bridge was founded by a veteran of the industry with two decades of experience in the Digital Transformation domain.
       </Lead>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Years ago, while working as sales associates at rival companies,
-            Thomas, Ben, and Natalie were discussing a big client they had all
-            been competing for. Joking about seeing the terms of each other’s
-            offers, they had an idea: what if they shared data to win deals and
-            split the commission behind their companies’ backs? It turned out to
-            be an incredible success, and that idea became the kernel for
-            Radiant.
+            Rohit Challu, the founder of 5th Bridge Data Technologies LLP, worked for close to a decade in the U.S. at Axonom Inc, a leading software vendor in the CRM/CPQ space. In this avatar he worked on many complex and unique CRM implementations, many of which went on to be featured as case studies by Microsoft.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Today, Radiant transforms revenue organizations by harnessing
-            illegally acquired customer and competitor data, using it to provide
-            extraordinary leverage. More than 30,000 companies rely on Radiant
-            to undercut their competitors and extort their customers, all
-            through a single integrated platform.
+          He started 5th Bridge Data Technologies LLP in 2014 in Hyderabad, India,  with a view to leverage his expertise, to establish a full portfolio specialized technology services firm. His vision was to develop a specialist firm that is uniquely placed to partner with clients on their digital transformation journeys
           </p>
-          <div className="mt-6">
+          <p className="mt-8 text-sm/6 text-gray-600">
+          As a highly specialized technology service provider 5th Bridge Data Technologies LLP has continually added niche services to its portfolio, the latest foray being AI, 3-D and VR solutions for digital transformation of businesses.
+          </p>
+          <div className="mt-10">
             <Button className="w-full sm:w-auto" href="/careers">
               Join us
             </Button>
@@ -166,7 +158,7 @@ function Team() {
           <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
             <img
               alt=""
-              src="/company/5.jpg"
+              src="/company/2.jpg"
               className="block size-full object-cover"
             />
           </div>
@@ -181,9 +173,9 @@ function Team() {
         className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
       >
         <Person
-          name="Michael Foster"
-          description="Co-Founder / CTO"
-          img="/team/michael-foster.jpg"
+          name="Rohit Challu"
+          description="Founder"
+          img="/team/rohit-challu.png"
         />
         <Person
           name="Dries Vincent"
@@ -463,7 +455,7 @@ export default function AboutUs() {
       <Container>
         <Navbar />
       </Container>
-      <Header />
+      {/* <Header /> */}
       <Team />
       <Footer />
     </main>
