@@ -159,18 +159,19 @@ function DarkBentoSection() {
             dark
             eyebrow="Human Resources"
             title="Have AI Answer all your employees' HR queries with 1stAskHR"
-            description="Our 5th Bridge AI chat assistant 1stAskHR analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            description="Whether you are a part of an HR team or an employee seeking quick solutions, 1stAskHR is your go-to tool for fast, accurate, and reliable answers. It integrates seamlessly with your organization’s HR database, ensuring every answer aligns with your company’s policies and procedures. "
             graphic={
-              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:851px_344px] bg-no-repeat" />
+              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:851px_344px] bg-no-repeat"  />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
+            href='https://1staskhr.com'
           />
           <BentoCard
             dark
             eyebrow="Security"
             title="Protect every communication with Addu Firewall"
-            description="With thousands of integrations, no one will be able to escape your cold outreach."
+            description="Our AI-driven security detects unknown threats by learning from known attacks while proactively blocking malicious access. "
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
