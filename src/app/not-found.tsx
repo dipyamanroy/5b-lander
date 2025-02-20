@@ -22,7 +22,7 @@ export default function NotFound() {
           404
         </Heading>
         <Lead className="mt-4 text-gray-600">
-          Oops! We haven't rendered that part yet.
+          Oops! We haven&apos;t rendered that part yet.
         </Lead>
         <div className="m-10">
           <a href="/" className="">
