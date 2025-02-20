@@ -13,10 +13,10 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 import Image from 'next/image'
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
-  { href: '/company', label: 'Company' },
+  // { href: '/pricing', label: 'Pricing' },
+  { href: '/about-us', label: 'About Us' },
+  { href: '/careers', label: 'Careers' },
   // { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
 ]
 
 function DesktopNav() {
