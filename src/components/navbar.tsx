@@ -4,7 +4,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react"
 import { Bars2Icon, ChevronDownIcon } from "@heroicons/react/24/solid"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { Link } from "./link"
 import Image from "next/image"
 
@@ -18,9 +18,18 @@ const serviceLinks = [
   { href: "/services/cpq", label: "CPQ Implementation" },
   { href: "/services/software", label: "Software Development" },
 ]
-
 function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
+  let closeTimeout: NodeJS.Timeout | null = null
+
+  const handleMouseEnter = () => {
+    if (closeTimeout) clearTimeout(closeTimeout) // Prevent instant close
+    setIsOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    closeTimeout = setTimeout(() => setIsOpen(false), 200) // Delay closing
+  }
 
   return (
     <nav className="relative hidden lg:flex gap-6">
@@ -32,33 +41,39 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
         About Us
       </Link>
 
-      {/* Services Dropdown */}
-      <div className="relative">
+      {/* Services Dropdown with Smooth Fade */}
+      <div
+        className="relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <button
-          onClick={() => setIsOpen(!isOpen)}
           className="px-5 py-3 text-base font-medium text-gray-950 flex items-center gap-2 data-hover:bg-black/[2.5%] rounded-md transition-colors"
         >
           Services <ChevronDownIcon className="w-4 h-4" />
         </button>
 
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
-          >
-            {serviceLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
-              >
-                {label}
-              </Link>
-            ))}
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }} // Smooth fade out
+              className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
+            >
+              {serviceLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
+                  onClick={() => setIsOpen(false)} // Close on click
+                >
+                  {label}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* Careers */}
