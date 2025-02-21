@@ -92,7 +92,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             <div className="relative flex justify-between items-center">
               <div className="relative flex gap-6">
               <div
-                className={`py-3 transition-all duration-300 ${isScrolled ? "ml-0" : "ml-15 mt-5 scale-150"}`}
+                className={`py-3 transition-all duration-300 ${isScrolled ? "ml-0" : "ml-20 mt-8 scale-180"}`}
               >
                 <Link href="/" title="Home"   onClick={(e) => {close() }}>
                   <Image

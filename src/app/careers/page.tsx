@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 function CareersListing() {
   return (
-    <Container className="mt-48 my-32">
+    <Container className="mt-58 my-32">
       <Heading as="h3" className="mt-2">
         Join our team.
       </Heading>

@@ -129,7 +129,7 @@ function Person({
 
 function Team() {
   return (
-    <Container className="mt-48 mb-32">
+    <Container className="mt-58 mb-32">
       <Subheading>Meet the founder</Subheading>
       <Heading as="h3" className="mt-2">
         Our Founding Story
