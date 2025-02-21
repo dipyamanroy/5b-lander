@@ -74,11 +74,19 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      const scrollY = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  
+      if (scrollY < 20 || scrollY >= maxScroll - 10) {
+        setIsScrolled(false); 
+      } else {
+        setIsScrolled(true); 
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <Disclosure>
