@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
+import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap } from 'lucide-react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -12,116 +13,71 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <Container className="mt-58">
-      <Heading as="h1">Custom Software Development Services</Heading>
-      <Lead className="mt-6 max-w-3xl">
-        Building high-performance web applications with .NET and ReactJS for businesses of all sizes.
-      </Lead>
+    <div 
+      className="relative w-full h-[500px] flex items-center justify-center text-center bg-cover bg-center" 
+      style={{ backgroundImage: "url('/screenshots/app.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-white/30" /> {/* Light overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white" /> {/* Fades down */}
+      <Container className="relative mt-58 z-10">
+        <Heading as="h1" className="text-gray-900">Custom Software Development Services</Heading>
+        <Lead className="mt-6 max-w-3xl mx-auto text-gray-800">
+          Building high-performance web applications with .NET and ReactJS for businesses of all sizes.
+        </Lead>
+      </Container>
+    </div>
+  )
+}
+
+
+const services = [
+  { icon: <Code size={32} className="text-[#90EE90]" />, title: 'Custom Web Apps', description: 'High-performance applications using .NET & ReactJS.' },
+  { icon: <Layers size={32} className="text-[#34BEA5]" />, title: 'Enterprise Solutions', description: 'Scalable apps for business efficiency.' },
+  { icon: <Server size={32} className="text-[#1D80AF]" />, title: 'API Development', description: 'Secure and seamless third-party integrations.' },
+  { icon: <Zap size={32} className="text-[#90EE90]" />, title: 'UI/UX Design', description: 'Modern, responsive, and user-friendly interfaces.' },
+  { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud Solutions', description: 'Deploying apps on AWS & Azure for reliability.' },
+  { icon: <RefreshCcw size={32} className="text-[#1D80AF]" />, title: 'Maintenance & Support', description: 'Ongoing performance optimization and security.' },
+]
+
+function ServicesSection() {
+  return (
+    <Container className="mt-24">
+      <h2 className="text-2xl font-semibold text-center">Our Services</h2>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <div key={index} className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center">
+            <div className="mb-4">{service.icon}</div>
+            <h3 className="text-lg font-medium">{service.title}</h3>
+            <p className="text-gray-600 mt-2">{service.description}</p>
+          </div>
+        ))}
+      </div>
     </Container>
   )
 }
 
-function ContentSection() {
+const workflowSteps = [
+  { step: 'Consultation & Analysis', description: 'Understanding your business needs to define the best approach.' },
+  { step: 'Design & Development', description: 'Crafting user-friendly designs and building applications.' },
+  { step: 'Testing & Deployment', description: 'Ensuring reliability and security before launching.' },
+  { step: 'Ongoing Support', description: 'Continuous improvements for long-term success.' },
+]
+
+function WorkflowSection() {
   return (
-    <Container className="mt-24">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        
-        {/* Left Side - Our Services Table */}
-        <div>
-          <h2 className="text-2xl font-semibold">Our Services</h2>
-          <table className="mt-6 w-full border-collapse border border-gray-200">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-3 text-left">Service</th>
-                <th className="border border-gray-300 px-4 py-3 text-left">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Custom Web Application Development</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Design and develop high-performance web applications using .NET and ReactJS.
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Enterprise Solutions</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Develop scalable enterprise applications to enhance productivity and streamline operations.
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">API Development & Integration</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Build secure APIs for seamless integration with third-party services and databases.
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">UI/UX Design & Frontend Development</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Craft responsive, user-friendly interfaces using ReactJS for a modern web experience.
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Cloud-Based Application Development</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Deploy scalable and reliable applications using Azure and AWS cloud technologies.
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Maintenance & Support</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Ensure long-term success with ongoing maintenance, security updates, and performance optimizations.
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Refactoring & Modernization</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Upgrade legacy applications by migrating them to the latest .NET and ReactJS frameworks.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        {/* Right Side - How We Work Table */}
-        <div>
-          <h2 className="text-2xl font-semibold">How We Work</h2>
-          <table className="mt-6 w-full border-collapse border border-gray-200">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-3 text-left">Step</th>
-                <th className="border border-gray-300 px-4 py-3 text-left">Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Consultation & Requirement Analysis</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  We understand your business needs and define the best approach.
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Design & Development</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  We craft user-friendly designs and develop high-performance applications.
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Testing & Deployment</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  We rigorously test and deploy solutions to ensure reliability and security.
-                </td>
-              </tr>
-              <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Ongoing Support & Enhancements</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  We provide continuous support and improvements for long-term success.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
+    <Container className="mt-24 mb-24">
+      <h2 className="text-2xl font-semibold text-center">How We Work</h2>
+      <div className="mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        {workflowSteps.map((step, index) => (
+          <div key={index} className="relative flex-1 flex flex-col items-center text-center">
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#34BEA5] text-white font-bold">{index + 1}</div>
+            <h3 className="mt-4 text-lg font-medium">{step.step}</h3>
+            <p className="text-gray-600 mt-2">{step.description}</p>
+            {index < workflowSteps.length - 1 && (
+              <div className="hidden md:block absolute top-6 right-[-20px] w-10 border-t-2 border-gray-300"></div>
+            )}
+          </div>
+        ))}
       </div>
     </Container>
   )
@@ -132,7 +88,8 @@ export default function Software() {
     <main className="overflow-hidden">
       <GradientBackground />
       <Header />
-      <ContentSection />
+      <ServicesSection />
+      <WorkflowSection />
       <Footer />
     </main>
   )
