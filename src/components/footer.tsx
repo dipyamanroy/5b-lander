@@ -6,6 +6,7 @@ import { Link } from './link'
 import { Logo } from './logo'
 import { Subheading } from './text'
 import Image from 'next/image'
+import { FooterGradient } from './footer-gradient'
 
 function CallToAction() {
   return (
@@ -161,7 +162,7 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative">
+      <FooterGradient className="relative">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
           <CallToAction />
@@ -197,7 +198,7 @@ export function Footer() {
             </PlusGridRow>
           </PlusGrid>
         </Container>
-      </Gradient>
+      </FooterGradient>
     </footer>
   )
 }
