@@ -39,13 +39,15 @@ function Hero() {
       <Container className="relative">
         
         <div className="pt-48 pb-24 sm:pt-48 sm:pb-32 md:pt-48 md:pb-48">
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight text-gray-950 leading-tight">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-gray-950 leading-tight">
           Specialists in Digital Transformation
         </h1>
-
-          <p className="mt-8 max-w text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            5th Bridge brings in more efficiency to your business, <br></br>so you can focus on what you do best, serving your customers.
-          </p>
+        <p className="mt-8 max-w text-base sm:text-xl md:text-2xl font-medium text-gray-950/75">
+          5th Bridge brings in more efficiency to your business,
+          <span className="hidden md:inline"> <br /> </span>
+          <span className="inline md:hidden"> </span>
+          so you can focus on what you do best, serving your customers.
+        </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="mailto:rohit@fifthbridgetech.com">Contact Us</Button>
             <Button variant="secondary" href="/careers">
