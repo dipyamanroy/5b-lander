@@ -100,7 +100,7 @@ system integrations, we deliver robust and scalable solutions. "
           }
           fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
-          href='/crm'
+          href='/services/crm'
         />
         <BentoCard
           eyebrow="Powertrak CPQ"
@@ -113,7 +113,7 @@ operations, and automate pricing and quoting, ensuring seamless integration with
           }
           fade={['bottom']}
           className="lg:col-span-2"
-          href='/cpq'
+          href='/services/cpq'
         />
         <BentoCard
           eyebrow="Software"
@@ -126,7 +126,7 @@ digital experiences that drive efficiency and growth. "
           }
           fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
-          href='software'
+          href='/services/software'
         />
       </div>
     </Container>
