@@ -51,8 +51,8 @@ function CareersListing() {
                   <td className="px-0 py-4">Data Analyst Intern</td>
                   <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
                   <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      Apply
+                    <Button variant="inactive"> 
+                      Closed
                     </Button>
                   </td>
                 </tr>
@@ -60,8 +60,8 @@ function CareersListing() {
                   <td className="px-0 py-4">.NET Development Intern</td>
                   <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
                   <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      Apply
+                    <Button variant="inactive">
+                      Closed
                     </Button>
                   </td>
                 </tr>
@@ -69,8 +69,8 @@ function CareersListing() {
                   <td className="px-0 py-4">Product Engineer</td>
                   <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
                   <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      Apply
+                    <Button variant="inactive">
+                      Closed
                     </Button>
                   </td>
                 </tr>
@@ -85,8 +85,8 @@ function CareersListing() {
                   <td className="px-0 py-4">Marketing Manager</td>
                   <td className="px-0 py-4 text-gray-600">Remote</td>
                   <td className="px-0 py-4 text-right">
-                    <Button variant="outline" href="#">
-                      Apply
+                    <Button variant="inactive">
+                      Closed
                     </Button>
                   </td>
                 </tr>
