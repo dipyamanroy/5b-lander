@@ -93,7 +93,11 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           <div className="relative flex gap-6">
             <div className={`py-3 ${isScrolled ? "" : "border-l border-t border-black/5"}`}>
               <Link href="/" title="Home">
-                <Image src="/logo.png" alt="5th Bridge Logo" width={127} height={34} />
+                <Image src="/logo.png" alt="5th Bridge Logo" width={127} height={34} 
+                          style={{ 
+                            filter: isScrolled ? "contrast(2.5) brightness(1.8)" : "brightness(0)"
+                          }} 
+                />
               </Link>
             </div>
             <div className={`relative hidden items-center py-3 lg:flex transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0"}`}>

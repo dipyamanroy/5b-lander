@@ -76,12 +76,12 @@ function Copyright() {
 export default function NotFound() {
   return (
     <main className="relative flex flex-col min-h-screen">
-      <Navbar />
       <GradientBackground />
       {/* Use flex-grow to push the footer down */}
       <Container className="flex flex-col items-center justify-center flex-grow text-center">
-        <Heading as="h1" className="text-6xl font-bold text-gray-900">404</Heading>
-        <Lead className="mt-4 text-gray-600">Oops! We haven&apos;t rendered that part yet.</Lead>
+        <Lead className="mt-10 text-gray-900">404</Lead>
+        <Heading as="h1" className="text-6xl font-bold text-gray-900">Page not found</Heading>
+        <Lead className="mt-10 text-gray-600">Oops! We haven&apos;t rendered that part yet.</Lead>
         <div className="m-10">
           <a href="/" className="">
             <Button variant="primary">Go Home</Button>

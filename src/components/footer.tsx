@@ -176,6 +176,9 @@ export function Footer() {
                       alt="5th Bridge Logo"
                       width={127}
                       height={34}
+                      style={{ 
+                        filter: "contrast(2.5) brightness(1.8)"
+                      }} 
                     />
                   </PlusGridItem>
                 </div>
