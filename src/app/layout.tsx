@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/navbar'
 import '@/styles/tailwind.css'
 import { Analytics } from "@vercel/analytics/next"
 import type { Metadata } from 'next'
@@ -47,6 +48,7 @@ export default function RootLayout({
       </head>
 
       <body className="text-gray-950 antialiased">
+        <Navbar />
           {children}
           <Analytics />
         </body>

@@ -37,10 +37,8 @@ function Hero() {
   <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset" />
 </div>
       <Container className="relative">
-        <Navbar
-          
-        />
-        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        
+        <div className="pt-48 pb-24 sm:pt-48 sm:pb-32 md:pt-48 md:pb-48">
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight text-gray-950 leading-tight">
           Specialists in Digital Transformation
         </h1>

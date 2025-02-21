@@ -129,7 +129,7 @@ function Person({
 
 function Team() {
   return (
-    <Container className="mt-16 mb-32">
+    <Container className="mt-38 mb-32">
       <Subheading>Meet the founder</Subheading>
       <Heading as="h3" className="mt-2">
         Our Founding Story
@@ -452,9 +452,6 @@ export default function AboutUs() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
-      <Container>
-        <Navbar />
-      </Container>
       {/* <Header /> */}
       <Team />
       <Footer />

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 function CareersListing() {
   return (
-    <Container className="mt-16 my-32">
+    <Container className="mt-38 my-32">
       <Heading as="h3" className="mt-2">
         Join our team.
       </Heading>
@@ -104,9 +104,6 @@ export default function Careers() {
     return (
         <main className="overflow-hidden">
             <GradientBackground />
-            <Container>
-                <Navbar />
-            </Container>
             <CareersListing />
             <Footer />
         </main>
