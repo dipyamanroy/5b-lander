@@ -1,111 +1,139 @@
-import { AnimatedNumber } from '@/components/animated-number'
-import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
-import { Heading, Lead, Subheading } from '@/components/text'
+import { Heading, Lead } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Careers',
-    description:
-      'Careers at 5th Bridge.',
+  title: 'Custom Software Development Services',
+  description: 'Building high-performance web applications with .NET and ReactJS for businesses of all sizes.',
 }
 
-function CareersListing() {
+function Header() {
   return (
-    <Container className="mt-58 my-32">
-      <Heading as="h3" className="mt-2">
-        Join our team.
-      </Heading>
+    <Container className="mt-58">
+      <Heading as="h1">Custom Software Development Services</Heading>
       <Lead className="mt-6 max-w-3xl">
-        We work together as team from all over India with goals to achieve more.
+        Building high-performance web applications with .NET and ReactJS for businesses of all sizes.
       </Lead>
-      <div className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-[1fr_24rem]">
-        <div className="lg:max-w-2xl">
-          <Subheading as="h3">Open positions</Subheading>
-          <div>
-            <table className="w-full text-left">
-              <colgroup>
-                <col className="w-2/3" />
-                <col className="w-1/3" />
-                <col className="w-0" />
-              </colgroup>
-              <thead className="sr-only">
-                <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Location</th>
-                  <th scope="col">Read more</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="colgroup" colSpan={3} className="px-0 pt-10 pb-0">
-                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
-                      Engineering
-                    </div>
-                  </th>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Data Analyst Intern</td>
-                  <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="inactive"> 
-                      Closed
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">.NET Development Intern</td>
-                  <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="inactive">
-                      Closed
-                    </Button>
-                  </td>
-                </tr>
-                <tr className="text-sm/6 font-normal">
-                  <td className="px-0 py-4">Product Engineer</td>
-                  <td className="px-0 py-4 text-gray-600">Hyderabad, IN</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="inactive">
-                      Closed
-                    </Button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="colgroup" colSpan={3} className="px-0 pt-5 pb-0">
-                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
-                      Marketing
-                    </div>
-                  </th>
-                </tr>
-                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
-                  <td className="px-0 py-4">Marketing Manager</td>
-                  <td className="px-0 py-4 text-gray-600">Remote</td>
-                  <td className="px-0 py-4 text-right">
-                    <Button variant="inactive">
-                      Closed
-                    </Button>
-                  </td>
-                </tr>
-                
-              </tbody>
-            </table>
-          </div>
+    </Container>
+  )
+}
+
+function ContentSection() {
+  return (
+    <Container className="mt-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        {/* Left Side - Our Services Table */}
+        <div>
+          <h2 className="text-2xl font-semibold">Our Services</h2>
+          <table className="mt-6 w-full border-collapse border border-gray-200">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-3 text-left">Service</th>
+                <th className="border border-gray-300 px-4 py-3 text-left">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Custom Web Application Development</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Design and develop high-performance web applications using .NET and ReactJS.
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3 font-medium">Enterprise Solutions</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Develop scalable enterprise applications to enhance productivity and streamline operations.
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">API Development & Integration</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Build secure APIs for seamless integration with third-party services and databases.
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3 font-medium">UI/UX Design & Frontend Development</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Craft responsive, user-friendly interfaces using ReactJS for a modern web experience.
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Cloud-Based Application Development</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Deploy scalable and reliable applications using Azure and AWS cloud technologies.
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3 font-medium">Maintenance & Support</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Ensure long-term success with ongoing maintenance, security updates, and performance optimizations.
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Refactoring & Modernization</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  Upgrade legacy applications by migrating them to the latest .NET and ReactJS frameworks.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
+        {/* Right Side - How We Work Table */}
+        <div>
+          <h2 className="text-2xl font-semibold">How We Work</h2>
+          <table className="mt-6 w-full border-collapse border border-gray-200">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-3 text-left">Step</th>
+                <th className="border border-gray-300 px-4 py-3 text-left">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Consultation & Requirement Analysis</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  We understand your business needs and define the best approach.
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3 font-medium">Design & Development</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  We craft user-friendly designs and develop high-performance applications.
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Testing & Deployment</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  We rigorously test and deploy solutions to ensure reliability and security.
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="border border-gray-300 px-4 py-3 font-medium">Ongoing Support & Enhancements</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  We provide continuous support and improvements for long-term success.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </Container>
   )
 }
 
-export default function Careers() {
-    return (
-        <main className="overflow-hidden">
-            <GradientBackground />
-            <CareersListing />
-            <Footer />
-        </main>
-    )
+export default function Software() {
+  return (
+    <main className="overflow-hidden">
+      <GradientBackground />
+      <Header />
+      <ContentSection />
+      <Footer />
+    </main>
+  )
 }
