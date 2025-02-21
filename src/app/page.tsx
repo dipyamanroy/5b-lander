@@ -38,7 +38,7 @@ function Hero() {
     </div>
       <Container className="relative">
         
-        <div className="pt-48 pb-24 sm:pt-48 sm:pb-32 md:pt-48 md:pb-48">
+        <div className="pt-48 pb-24 sm:pt-48 sm:pb-32 md:pt-64 md:pb-48">
         <h1 className="font-display text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-gray-950 leading-tight">
           Specialists in Digital Transformation
         </h1>
