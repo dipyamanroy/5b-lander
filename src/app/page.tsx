@@ -27,15 +27,15 @@ function Hero() {
   return (
     <div className="relative">
       <div className="rounded-4xl overflow-hidden"> {/* Parent container */}
-  <Image
-    src="/banner.jpg"
-    alt="Banner Image"
-    layout="fill" 
-    objectFit="cover" 
-    className="absolute rounded-[2.5rem] p-2" // Use inset-0 to fill the parent
-  />
-  <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset" />
-</div>
+      <Image
+        src="/banner.jpg"
+        alt="Banner Image"
+        layout="fill" 
+        objectFit="cover" 
+        className="absolute rounded-[2.5rem] p-2" // Use inset-0 to fill the parent
+      />
+      <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset" />
+    </div>
       <Container className="relative">
         
         <div className="pt-48 pb-24 sm:pt-48 sm:pb-32 md:pt-48 md:pb-48">
