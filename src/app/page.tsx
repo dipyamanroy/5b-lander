@@ -91,9 +91,10 @@ function BentoSection() {
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
         
         <BentoCard
-          eyebrow="Dynamics"
-          title="CRM"
-          description="We specialize in complex system integration with Customer relationship management (CRM) systems. Our team has an expertise of 25 years in developing solutions on Dynamics."
+          eyebrow="Dynamics 365 CRM"
+          title="Dynamics 365 CRM Solutions"
+          description="We specialize in creating custom solutions for Microsoft Dynamics 365 CRM. Whether you need tailored UI components, automated processes, or deep 
+system integrations, we deliver robust and scalable solutions. "
           graphic={
             <div className="h-80 bg-[url(/screenshots/dynamics.png)] bg-[size:1000px_560px] bg-[left_-10px_top_-10px] bg-no-repeat" />
           }
@@ -101,9 +102,11 @@ function BentoSection() {
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="3D"
-          title="CPQ"
-          description="Interactive 3D models in Configure Price Quote (CPQ) for display objects within space in ways text and images simply cannot. We work on a cutting edge 3D platform that uses Unity. "
+          eyebrow="Powertrak CPQ"
+          title="Powertrak CPQ Solutions"
+          description="We specialize in customizing and implementing Powertrak CPQ to optimize your sales 
+operations, and automate pricing and quoting, ensuring seamless integration with your existing CRM and ERP systems. 
+ "
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/cpq.png)] bg-[size:1100px_650px] bg-[left_-500px_top_-100px] bg-no-repeat" />
           }
@@ -111,9 +114,11 @@ function BentoSection() {
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Application Development"
-          title="Custom Applications"
-          description="We help develop and maintain full-stack applications written in C#, ASP.NET, React (Javascript) and other custom tech stacks as per our clients demand."
+          eyebrow="Software"
+          title="Software Development Services"
+          description="We develop robust, scalable, and secure web applications tailored to your 
+business needs. With expertise in the .NET framework and ReactJS, we create seamless 
+digital experiences that drive efficiency and growth. "
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/app.jpg)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
           }
