@@ -6,16 +6,16 @@ import { Heading, Lead } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Custom Software Development Services',
-  description: 'Building high-performance web applications with .NET and ReactJS for businesses of all sizes.',
+  title: 'Powertrak CPQ Customization & Implementation',
+  description: 'Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.',
 }
 
 function Header() {
   return (
     <Container className="mt-58">
-      <Heading as="h1">Custom Software Development Services</Heading>
+      <Heading as="h1">Powertrak CPQ Customization & Implementation</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Building high-performance web applications with .NET and ReactJS for businesses of all sizes.
+        Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.
       </Lead>
     </Container>
   )
@@ -38,45 +38,39 @@ function ContentSection() {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Custom Web Application Development</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Powertrak CPQ Implementation</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Design and develop high-performance web applications using .NET and ReactJS.
+                  Deploy Powertrak CPQ to streamline product configuration, pricing, and quoting.
                 </td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Enterprise Solutions</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Customization & Enhancements</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Develop scalable enterprise applications to enhance productivity and streamline operations.
+                  Tailor Powertrak CPQ to meet unique business needs with custom rules, workflows, and UI enhancements.
                 </td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">API Development & Integration</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Integration with CRM & ERP</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Build secure APIs for seamless integration with third-party services and databases.
+                  Connect Powertrak CPQ with Microsoft Dynamics 365, Salesforce, and ERP systems.
                 </td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">UI/UX Design & Frontend Development</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Guided Selling & Workflow Automation</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Craft responsive, user-friendly interfaces using ReactJS for a modern web experience.
+                  Enhance sales with guided selling tools, automated approvals, and streamlined workflows.
                 </td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Cloud-Based Application Development</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">3D Visualization & Interactive Configuration</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Deploy scalable and reliable applications using Azure and AWS cloud technologies.
+                  Leverage advanced 3D visualization for interactive product configuration.
                 </td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Maintenance & Support</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Training & Support</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  Ensure long-term success with ongoing maintenance, security updates, and performance optimizations.
-                </td>
-              </tr>
-              <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Refactoring & Modernization</td>
-                <td className="border border-gray-300 px-4 py-3">
-                  Upgrade legacy applications by migrating them to the latest .NET and ReactJS frameworks.
+                  Ensure team success with expert training, ongoing support, and performance optimization.
                 </td>
               </tr>
             </tbody>
@@ -95,27 +89,33 @@ function ContentSection() {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Consultation & Requirement Analysis</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Discovery & Planning</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  We understand your business needs and define the best approach.
+                  We analyze business needs and outline the best CPQ solution.
                 </td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Design & Development</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Customization & Development</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  We craft user-friendly designs and develop high-performance applications.
+                  Our experts tailor Powertrak CPQ to your workflow and requirements.
                 </td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-4 py-3 font-medium">Testing & Deployment</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Seamless Integration</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  We rigorously test and deploy solutions to ensure reliability and security.
+                  We connect CPQ with your existing CRM & ERP systems for smooth data flow.
                 </td>
               </tr>
               <tr className="bg-gray-50">
-                <td className="border border-gray-300 px-4 py-3 font-medium">Ongoing Support & Enhancements</td>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Testing & Deployment</td>
                 <td className="border border-gray-300 px-4 py-3">
-                  We provide continuous support and improvements for long-term success.
+                  Rigorous testing ensures a flawless implementation.
+                </td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 px-4 py-3 font-medium">Training & Ongoing Support</td>
+                <td className="border border-gray-300 px-4 py-3">
+                  We provide training and continuous support to maximize your ROI.
                 </td>
               </tr>
             </tbody>
@@ -127,7 +127,7 @@ function ContentSection() {
   )
 }
 
-export default function Software() {
+export default function CPQ() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
