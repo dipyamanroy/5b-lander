@@ -44,7 +44,7 @@ function MobileNavButton() {
   )
 }
 
-function MobileNav() {
+function MobileNav({ close }: { close: () => void }) {
   return (
     <DisclosurePanel className="lg:hidden bg-white/80 backdrop-blur-sm shadow-lg rounded-xl p-4 mt-2 rounded-lg shadow-md absolute top-full left-0 right-0 z-50">
       <div className="flex flex-col gap-6 py-4">
@@ -59,7 +59,7 @@ function MobileNav() {
             }}
             key={href}
           >
-            <Link href={href} className="text-base font-medium text-gray-950 ">
+            <Link href={href} className="text-base font-medium text-gray-950" onClick={close}>
               {label}
             </Link>
           </motion.div>
@@ -76,39 +76,45 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
-    <Disclosure
-      as="header"
-      className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
-      } p-4`}
-    >
-      <div className={`transition-all duration-300 ${isScrolled ? "py-0.2 px-4" : "py-5 px-6"}`}>
-        <div className="relative flex justify-between items-center">
-          <div className="relative flex gap-6">
-            <div className={`py-3 ${isScrolled ? "" : "border-l border-t border-black/5"}`}>
-              <Link href="/" title="Home">
-                <Image src="/logo.png" alt="5th Bridge Logo" width={127} height={34} 
-                          style={{ 
-                            filter: isScrolled ? "contrast(2.5) brightness(1.8)" : "brightness(0)"
-                          }} 
-                />
-              </Link>
-            </div>
-            <div className={`relative hidden items-center py-3 lg:flex transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0"}`}>
-              {banner}
+    <Disclosure>
+      {({ open, close }) => ( // Get `close` from Disclosure
+        <header
+          className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
+            isScrolled ? "bg-white/80 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
+          } p-4`}
+        >
+          <div className={`transition-all duration-300 ${isScrolled ? "py-0.2 px-4" : "py-5 px-6"}`}>
+            <div className="relative flex justify-between items-center">
+              <div className="relative flex gap-6">
+                <div className={`py-3 ${isScrolled ? "" : "border-l border-t border-black/5"}`}>
+                <Link href="/" title="Home"   onClick={(e) => {close() }}>
+                  <Image
+                    src="/logo.png"
+                    alt="5th Bridge Logo"
+                    width={127}
+                    height={34}
+                    style={{
+                      filter: isScrolled ? "contrast(2.5) brightness(1.8)" : "brightness(0)",
+                    }}
+                  />
+                </Link>
+                </div>
+                <div className={`relative hidden items-center py-3 lg:flex transition-opacity duration-300 ${isScrolled ? "opacity-100" : "opacity-0"}`}>
+                  {banner}
+                </div>
+              </div>
+              <DesktopNav isScrolled={isScrolled} />
+              <MobileNavButton />
             </div>
           </div>
-          <DesktopNav isScrolled={isScrolled} />
-          <MobileNavButton />
-        </div>
-      </div>
-      <MobileNav />
+          <MobileNav close={close} /> {/* Pass `close` function */}
+        </header>
+      )}
     </Disclosure>
   )
 }
