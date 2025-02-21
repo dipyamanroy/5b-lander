@@ -16,13 +16,13 @@ const links = [
 
 function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
   return (
-    <nav className={`relative hidden lg:flex ${isScrolled ? "gap-4" : "gap-6"}`}>
+    <nav className={`relative hidden lg:flex ${isScrolled ? "gap-4" : "gap-4"}`}>
       {links.map(({ href, label }) => (
-        <div key={href} className={`relative flex ${isScrolled ? "" : "border-l border-t border-black/5"}`}>
+        <div key={href} className={`relative flex ${isScrolled ? "" : ""}`}>
           <Link
             href={href}
             className={`flex items-center px-5 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/[2.5%] ${
-              isScrolled ? "hover:bg-gray-100 rounded-md transition-colors" : ""
+              isScrolled ? "hover:bg-gray-100 rounded-md transition-colors" : "hover:bg-gray-100 rounded-md transition-colors"
             }`}
           >
             {label}
@@ -88,10 +88,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
             isScrolled ? "bg-white/80 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
           } p-4`}
         >
-          <div className={`transition-all duration-300 ${isScrolled ? "py-0.2 px-4" : "py-5 px-6"}`}>
+          <div className={`transition-all duration-300 ${isScrolled ? "py-0.2 px-4" : "py-5 px-4"}`}>
             <div className="relative flex justify-between items-center">
               <div className="relative flex gap-6">
-                <div className={`py-3 ${isScrolled ? "" : ""}`}>
+              <div
+                className={`py-3 transition-all duration-300 ${isScrolled ? "ml-0" : "ml-15 mt-5 scale-150"}`}
+              >
                 <Link href="/" title="Home"   onClick={(e) => {close() }}>
                   <Image
                     src="/logo.png"
