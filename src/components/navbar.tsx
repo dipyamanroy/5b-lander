@@ -76,11 +76,12 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const isMobile = window.innerWidth < 1024; // Adjust breakpoint as needed (e.g., 768px for tablets)
   
-      if (scrollY < 20 || scrollY >= maxScroll - 10) {
-        setIsScrolled(false); 
+      if (scrollY < 20 || (!isMobile && scrollY >= maxScroll - 10)) {
+        setIsScrolled(false); // Fixed at the top (only on desktop when at bottom)
       } else {
-        setIsScrolled(true); 
+        setIsScrolled(true); // Floating in between
       }
     };
   
@@ -92,7 +93,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     <Disclosure>
       {({ open, close }) => ( // Get `close` from Disclosure
         <header
-          className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
+          className={`fixed top-4 left-2 right-2 z-50 transition-all duration-300 ${
             isScrolled ? "bg-white/80 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
           } p-4`}
         >
