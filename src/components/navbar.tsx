@@ -46,7 +46,7 @@ function MobileNavButton() {
 
 function MobileNav() {
   return (
-    <DisclosurePanel className="lg:hidden bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-4 mt-2 rounded-lg shadow-md absolute top-full left-0 right-0 z-50">
+    <DisclosurePanel className="lg:hidden bg-white/80 backdrop-blur-sm shadow-lg rounded-xl p-4 mt-2 rounded-lg shadow-md absolute top-full left-0 right-0 z-50">
       <div className="flex flex-col gap-6 py-4">
         {links.map(({ href, label }, linkIndex) => (
           <motion.div
@@ -85,7 +85,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     <Disclosure
       as="header"
       className={`fixed top-4 left-4 right-4 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
+        isScrolled ? "bg-white/80 backdrop-blur-sm shadow-lg rounded-xl" : "bg-transparent"
       } p-4`}
     >
       <div className={`transition-all duration-300 ${isScrolled ? "py-0.2 px-4" : "py-5 px-6"}`}>
