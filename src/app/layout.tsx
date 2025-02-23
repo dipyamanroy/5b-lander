@@ -37,7 +37,7 @@ export default function RootLayout({
         <meta property="twitter:image:type" content="png" />
         <link
           rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
         />
         <link
           rel="alternate"
