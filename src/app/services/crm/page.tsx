@@ -1,9 +1,8 @@
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
-import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
-import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap, Cog, Gauge, Blocks } from 'lucide-react'
+import { Code, Server, Zap, Cog, Gauge, Blocks } from 'lucide-react'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 

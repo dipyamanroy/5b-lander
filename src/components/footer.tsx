@@ -54,9 +54,9 @@ function Sitemap() {
       <div>
         <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="services/crm">CRM</SitemapLink>
-          <SitemapLink href="services/cpq">CPQ</SitemapLink>
-          <SitemapLink href="services/software">Software Development</SitemapLink>
+          <SitemapLink href="https://5b-lander.vercel.app/services/crm">CRM</SitemapLink>
+          <SitemapLink href="https://5b-lander.vercel.app/services/cpq">CPQ</SitemapLink>
+          <SitemapLink href="https://5b-lander.vercel.app/services/software">Software Development</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
