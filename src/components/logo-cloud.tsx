@@ -1,50 +1,34 @@
-"use client"
-import { motion } from 'framer-motion';
-import { clsx } from 'clsx';
+"use client";
+import Marquee from "react-fast-marquee";
 
-export function LogoCloud({
-  className,
-}: React.ComponentPropsWithoutRef<'div'>) {
+export function LogoCloud({ className }: React.ComponentPropsWithoutRef<"div">) {
   const logos = [
     { alt: "SavvyCal", src: "/logo-cloud/1.svg" },
     { alt: "Laravel", src: "/logo-cloud/2.svg" },
     { alt: "Tuple", src: "/logo-cloud/3.svg" },
     { alt: "Transistor", src: "/logo-cloud/4.svg" },
-    { alt: "Statamic", src: "/logo-cloud/5.svg" }
+    { alt: "Statamic", src: "/logo-cloud/5.svg" },
   ];
 
   return (
-    <div className={clsx('relative w-full', className)}>
-      <motion.div 
-        className="flex gap-40 py-4"
-        animate={{
-          x: [0, -1035],
-        }}
-        transition={{
-          duration: 20,
-          ease: "linear",
-          repeat: Infinity,
-        }}
+    <div className={`w-full mx-0 py-4 ${className}`}>
+      <Marquee
+        gradient={true} 
+        speed={40} 
+        pauseOnHover={true} 
+        loop={0}
+        className="flex items-center"
       >
-        {/* First set of logos */}
         {logos.map((logo, idx) => (
-          <img
-            key={`logo-1-${idx}`}
-            alt={logo.alt}
-            src={logo.src}
-            className="h-9 shrink-0 sm:h-8 lg:h-12"
-          />
+          <div key={idx} className="mx-18 flex items-center">
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="h-10 sm:h-9 lg:h-12"
+            />
+          </div>
         ))}
-        {/* Duplicated set for seamless loop */}
-        {logos.map((logo, idx) => (
-          <img
-            key={`logo-2-${idx}`}
-            alt={logo.alt}
-            src={logo.src}
-            className="h-9 shrink-0 sm:h-8 lg:h-12"
-          />
-        ))}
-      </motion.div>
+      </Marquee>
     </div>
   );
 }
