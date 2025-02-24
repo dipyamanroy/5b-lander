@@ -54,9 +54,9 @@ function Sitemap() {
       <div>
         <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="crm">CRM</SitemapLink>
-          <SitemapLink href="cpq">CPQ</SitemapLink>
-          <SitemapLink href="software">Software Development</SitemapLink>
+          <SitemapLink href="services/crm">CRM</SitemapLink>
+          <SitemapLink href="services/cpq">CPQ</SitemapLink>
+          <SitemapLink href="services/software">Software Development</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
