@@ -45,22 +45,7 @@ const services = [
     description: (
       <>
       High-performance applications using 
-      <Image 
-            src="/dotnet.png"  
-            alt="DotNet Logo"
-            width={30}
-            height={30}
-            className="inline-block align-middle mx-2"
-          />
-          and
-          <Image 
-            src="/react.png"  
-            alt="React Logo"
-            width={30}
-            height={30}
-            className="inline-block align-middle mx-1"
-          />
-          React
+      .NET and ReactJS
       </>
     ),
   },

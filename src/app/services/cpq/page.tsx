@@ -21,7 +21,7 @@ function Header() {
                 alt="Powertrak Logo"
                 width={200}
                 height={200}
-                className="inline-block align-middle"
+                className="inline-block align-middle mx-2"
               /> CPQ Customization & Implementation</Heading> 
             <Lead className="mt-6 max-w-3xl">
             Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.
