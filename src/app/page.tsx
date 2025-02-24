@@ -93,7 +93,16 @@ function BentoSection() {
         
         <BentoCard
           eyebrow="Dynamics 365 CRM"
-          title="Dynamics 365 CRM Solutions"
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/dynamics365logo.png"
+                alt="Revalize Logo"
+                className="h-15"
+              />
+              <span>Solutions</span>
+            </div>
+          }
           description="We specialize in creating custom solutions for Microsoft Dynamics 365 CRM. Whether you need tailored UI components, automated processes, or deep 
 system integrations, we deliver robust and scalable solutions. "
           graphic={
@@ -104,8 +113,17 @@ system integrations, we deliver robust and scalable solutions. "
           href='/services/crm'
         />
         <BentoCard
-          eyebrow="Powertrak CPQ"
-          title="Powertrak CPQ Solutions"
+          eyebrow="Revalize CPQ"
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/revalize.png"
+                alt="Revalize Logo"
+                className="h-10"
+              />
+              <span>CPQ Solutions</span>
+            </div>
+          }
           description="We specialize in customizing and implementing Powertrak CPQ to optimize your sales 
 operations, and automate pricing and quoting, ensuring seamless integration with your existing CRM and ERP systems. 
  "

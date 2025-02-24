@@ -17,11 +17,11 @@ function Header() {
     <Container className="mt-58 my-32">
           <Heading as="h3">Custom           
             <Image 
-                src="/powertrakcpq.png"  
-                alt="Powertrak Logo"
-                width={200}
-                height={200}
-                className="inline-block align-middle mx-2"
+                src="/revalize.png"  
+                alt="Revalize Logo"
+                width={225}
+                height={225}
+                className="inline-block align-middle mx-5"
               /> CPQ Customization & Implementation</Heading> 
             <Lead className="mt-6 max-w-3xl">
             Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.

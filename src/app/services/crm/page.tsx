@@ -18,9 +18,9 @@ function Header() {
         <Image 
             src="/dynamics365logo.png"  
             alt="Dynamics 365 Logo"
-            width={200}
-            height={200}
-            className="inline-block align-middle mx-2"
+            width={225}
+            height={225}
+            className="inline-block align-middle mx-5"
           />CRM Solutions</Heading> 
         <Lead className="mt-6 max-w-3xl">
           Optimize, automate, and enhance your business with tailored Dynamics 365
