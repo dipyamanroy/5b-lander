@@ -37,7 +37,9 @@ export function Subheading({
       data-dark={dark ? 'true' : undefined}
       className={clsx(
         className,
-        'font-mono text-xs/5 font-semibold tracking-widest text-gray-500 uppercase data-dark:text-gray-400',
+        'text-xs/5 font-bold tracking-widest text-gray-500 uppercase data-dark:text-gray-400',
+        'font-mono',
+        'font-[JetBrains Mono, monospace]'
       )}
     />
   )
