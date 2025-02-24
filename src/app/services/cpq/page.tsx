@@ -3,7 +3,9 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Heading, Lead } from '@/components/text'
 import { CheckCircle, Settings, RefreshCcw, Cloud, Code, Link } from 'lucide-react'
+import Image from 'next/image'
 import type { Metadata } from 'next'
+
 
 export const metadata: Metadata = {
   title: 'CPQ Implementation & Customization',
@@ -12,27 +14,51 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <div className="relative w-full h-[500px] flex items-center justify-center text-center bg-cover bg-center" style={{ backgroundImage: "url('/screenshots/cpq.png')" }}>
-      <div className="absolute inset-0 bg-white/30" /> {/* Light overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white" /> {/* Fades down */}
-      <Container className="relative mt-58 z-10">
-        <Heading as="h1" className="text-gray-900">Powertrak CPQ Customization & Implementation</Heading>
-        <Lead className="mt-6 max-w-3xl mx-auto text-gray-800">
-          Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.
-        </Lead>
-      </Container>
-    </div>
+    <Container className="mt-58 my-32">
+          <Heading as="h3">Custom           
+            <Image 
+                src="/powertrakcpq.png"  
+                alt="Powertrak Logo"
+                width={200}
+                height={200}
+                className="inline-block align-middle"
+              /> CPQ Customization & Implementation</Heading> 
+            <Lead className="mt-6 max-w-3xl">
+            Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.
+            </Lead>
+    </Container>
   )
 }
 
 
 const services = [
-  { icon: <Code size={32} className="text-[#90EE90]/70" />, title: 'CPQ Deployment', description: 'Implement and configure CPQ solutions to streamline quoting and pricing.' },
-  { icon: <Settings size={32} className="text-[#34BEA5]/70" />, title: 'Customization & Enhancements', description: 'Tailor CPQ workflows, rules, and UI to fit business needs.' },
-  { icon: <Link size={32} className="text-[#1D80AF]/70" />, title: 'CRM & ERP Integration', description: 'Seamlessly connect CPQ with Microsoft Dynamics, Salesforce, and ERP systems.' },
-  { icon: <RefreshCcw size={32} className="text-[#90EE90]/70" />, title: 'Guided Selling & Automation', description: 'Optimize sales with guided workflows and approval automation.' },
-  { icon: <Cloud size={32} className="text-[#34BEA5]/70" />, title: 'Cloud & On-Prem Solutions', description: 'Deploy CPQ on the cloud or on-premises for flexibility and security.' },
-  { icon: <CheckCircle size={32} className="text-[#1D80AF]/70" />, title: 'Training & Support', description: 'Empower teams with expert training and ongoing support.' },
+  { icon: <Code size={32} className="text-[#90EE90]" />, title: 'CPQ Deployment', description: 'Implement and configure CPQ solutions to streamline quoting and pricing.' },
+  { icon: <Settings size={32} className="text-[#34BEA5]" />, title: 'Customization & Enhancements', description: 'Tailor CPQ workflows, rules, and UI to fit business needs.' },
+  { icon: <Link size={32} className="text-[#1D80AF]" />, title: 'CRM & ERP Integration', 
+    description: (
+      <>
+      Seamlessly connect CPQ with
+      <Image 
+        src="/dynamics365logo.png"  
+        alt="Dynamics 365 Logo"
+        width={100}
+        height={100}
+        className="inline-block align-middle mx-2"
+      />
+      <Image 
+        src="/salesforce.png"  
+        alt="Salesforce Logo"
+        width={60}
+        height={60}
+        className="inline-block align-middle mx-2"
+      />
+      and other ERP systems.
+      </>
+    )
+  },
+  { icon: <RefreshCcw size={32} className="text-[#90EE90]" />, title: 'Guided Selling & Automation', description: 'Optimize sales with guided workflows and approval automation.' },
+  { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud & On-Prem Solutions', description: 'Deploy CPQ on the cloud or on-premises for flexibility and security.' },
+  { icon: <CheckCircle size={32} className="text-[#1D80AF]" />, title: 'Training & Support', description: 'Empower teams with expert training and ongoing support.' },
 ]
 
 function ServicesSection() {
@@ -67,7 +93,7 @@ function WorkflowSection() {
       <div className="mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {workflowSteps.map((step, index) => (
           <div key={index} className="relative flex-1 flex flex-col items-center text-center">
-            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#34BEA5]/70 text-white font-bold">{index + 1}</div>
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#34BEA5] text-white font-bold">{index + 1}</div>
             <h3 className="mt-4 text-lg font-medium">{step.step}</h3>
             <p className="text-gray-600 mt-2">{step.description}</p>
             {index < workflowSteps.length - 1 && (

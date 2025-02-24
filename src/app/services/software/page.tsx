@@ -5,6 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
 import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap } from 'lucide-react'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Custom Software Development Services',
@@ -13,29 +14,83 @@ export const metadata: Metadata = {
 
 function Header() {
   return (
-    <div 
-      className="relative w-full h-[500px] flex items-center justify-center text-center bg-cover bg-center" 
-      style={{ backgroundImage: "url('/screenshots/app.jpg')" }}
-    >
-      <div className="absolute inset-0 bg-white/30" /> {/* Light overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white" /> {/* Fades down */}
-      <Container className="relative mt-58 z-10">
-        <Heading as="h1" className="text-gray-900">Custom Software Development Services</Heading>
-        <Lead className="mt-6 max-w-3xl mx-auto text-gray-800">
-          Building high-performance web applications with .NET and ReactJS for businesses of all sizes.
+      <Container className="mt-58 my-32">
+        <Heading as="h3">Custom Software Development Services</Heading>
+        <Lead className="mt-6 max-w-3xl">
+          Building high-performance web applications with 
+          <Image 
+            src="/dotnet.png"  
+            alt="DotNet Logo"
+            width={50}
+            height={50}
+            className="inline-block align-middle mx-2"
+          />
+          and <br />
+          <Image 
+            src="/react.png"  
+            alt="React Logo"
+            width={50}
+            height={50}
+            className="inline-block align-middle mx-2"
+          />
+          React for businesses of all sizes.
         </Lead>
       </Container>
-    </div>
   )
 }
 
 
 const services = [
-  { icon: <Code size={32} className="text-[#90EE90]" />, title: 'Custom Web Apps', description: 'High-performance applications using .NET & ReactJS.' },
+  { icon: <Code size={32} className="text-[#90EE90]" />, title: 'Custom Web Apps', 
+    description: (
+      <>
+      High-performance applications using 
+      <Image 
+            src="/dotnet.png"  
+            alt="DotNet Logo"
+            width={30}
+            height={30}
+            className="inline-block align-middle mx-2"
+          />
+          and
+          <Image 
+            src="/react.png"  
+            alt="React Logo"
+            width={30}
+            height={30}
+            className="inline-block align-middle mx-1"
+          />
+          React
+      </>
+    ),
+  },
   { icon: <Layers size={32} className="text-[#34BEA5]" />, title: 'Enterprise Solutions', description: 'Scalable apps for business efficiency.' },
   { icon: <Server size={32} className="text-[#1D80AF]" />, title: 'API Development', description: 'Secure and seamless third-party integrations.' },
   { icon: <Zap size={32} className="text-[#90EE90]" />, title: 'UI/UX Design', description: 'Modern, responsive, and user-friendly interfaces.' },
-  { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud Solutions', description: 'Deploying apps on AWS & Azure for reliability.' },
+  { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud Solutions', 
+    description:
+    (
+      <>
+      Deploying apps on
+      <Image 
+            src="/aws.png"  
+            alt="AWS Logo"
+            width={30}
+            height={30}
+            className="inline-block align-middle mx-2"
+          />
+          and
+          <Image 
+            src="/azure.png"  
+            alt="Azure Logo"
+            width={120}
+            height={120}
+            className="inline-block align-middle mx-1"
+          />
+          for reliability.
+      </>
+    ),
+  },
   { icon: <RefreshCcw size={32} className="text-[#1D80AF]" />, title: 'Maintenance & Support', description: 'Ongoing performance optimization and security.' },
 ]
 

@@ -17,7 +17,7 @@ function CareersListing() {
   return (
     <Container className="mt-58 my-32">
       <Heading as="h3" className="mt-2">
-        Join our team.
+        Join our team
       </Heading>
       <Lead className="mt-6 max-w-3xl">
         We work together as team from all over India with goals to achieve more.
