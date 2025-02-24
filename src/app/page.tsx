@@ -15,6 +15,7 @@ import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import { FlaskConical } from 'lucide-react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -137,9 +138,12 @@ digital experiences that drive efficiency and growth. "
 
 function DarkBentoSection() {
   return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
+    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-28">
       <Container>
-        <Subheading dark>AI Research</Subheading>
+        <Subheading dark style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <FlaskConical size={24} />
+          AI Labs
+        </Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
           Working on the Cutting Edge
         </Heading>
