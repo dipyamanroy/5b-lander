@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
-import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap } from 'lucide-react'
+import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap, Shapes } from 'lucide-react'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -50,7 +50,7 @@ const services = [
   },
   { icon: <Layers size={32} className="text-[#34BEA5]" />, title: 'Enterprise Solutions', description: 'Scalable apps for business efficiency.' },
   { icon: <Server size={32} className="text-[#1D80AF]" />, title: 'API Development', description: 'Secure and seamless third-party integrations.' },
-  { icon: <Zap size={32} className="text-[#90EE90]" />, title: 'UI/UX Design', description: 'Modern, responsive, and user-friendly interfaces.' },
+  { icon: <Shapes size={32} className="text-[#90EE90]" />, title: 'UI/UX Design', description: 'Modern, responsive, and user-friendly interfaces.' },
   { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud Solutions', 
     description:
     (

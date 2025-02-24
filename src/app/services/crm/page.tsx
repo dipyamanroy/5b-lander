@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead } from '@/components/text'
-import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap } from 'lucide-react'
+import { CheckCircle, Code, Layers, Server, Cloud, RefreshCcw, Zap, Cog, Gauge, Blocks } from 'lucide-react'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 
@@ -33,12 +33,7 @@ function Header() {
 
 const services = [
   { 
-    icon: <Image 
-      src="/Dataverse_scalable.svg" 
-      alt="Plugin Development Logo" 
-      width={40} 
-      height={40} 
-    />, 
+    icon: <Blocks size={32} className="text-[#90EE90]" />, 
     title: 'Plugin Development', 
     description: 'Extend CRM functionality with custom plugins to automate business logic and enhance processes.' 
   },
@@ -76,8 +71,8 @@ const services = [
     )
   },
   
-  { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Customization & Configuration', description: 'Modify and extend CRM entities, forms, views, and business logic.' },
-  { icon: <RefreshCcw size={32} className="text-[#1D80AF]" />, title: 'Performance Optimization', description: 'Enhance CRM performance with optimizations, scalability improvements, and best practices.' },
+  { icon: <Cog size={32} className="text-[#34BEA5]" />, title: 'Customization & Configuration', description: 'Modify and extend CRM entities, forms, views, and business logic.' },
+  { icon: <Gauge size={32} className="text-[#1D80AF]" />, title: 'Performance Optimization', description: 'Enhance CRM performance with optimizations, scalability improvements, and best practices.' },
 ]
 
 function ServicesSection() {

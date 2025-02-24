@@ -2,7 +2,7 @@ import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Heading, Lead } from '@/components/text'
-import { CheckCircle, Settings, RefreshCcw, Cloud, Code, Link } from 'lucide-react'
+import { CheckCircle, Settings, RefreshCcw, Cloud, Code, Link, Cog, Unplug, Bot, Presentation } from 'lucide-react'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 
@@ -33,8 +33,8 @@ function Header() {
 
 const services = [
   { icon: <Code size={32} className="text-[#90EE90]" />, title: 'CPQ Deployment', description: 'Implement and configure CPQ solutions to streamline quoting and pricing.' },
-  { icon: <Settings size={32} className="text-[#34BEA5]" />, title: 'Customization & Enhancements', description: 'Tailor CPQ workflows, rules, and UI to fit business needs.' },
-  { icon: <Link size={32} className="text-[#1D80AF]" />, title: 'CRM & ERP Integration', 
+  { icon: <Cog size={32} className="text-[#34BEA5]" />, title: 'Customization & Enhancements', description: 'Tailor CPQ workflows, rules, and UI to fit business needs.' },
+  { icon: <Unplug size={32} className="text-[#1D80AF]" />, title: 'CRM & ERP Integration', 
     description: (
       <>
       Seamlessly connect CPQ with
@@ -56,9 +56,9 @@ const services = [
       </>
     )
   },
-  { icon: <RefreshCcw size={32} className="text-[#90EE90]" />, title: 'Guided Selling & Automation', description: 'Optimize sales with guided workflows and approval automation.' },
+  { icon: <Bot size={32} className="text-[#90EE90]" />, title: 'Guided Selling & Automation', description: 'Optimize sales with guided workflows and approval automation.' },
   { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Cloud & On-Prem Solutions', description: 'Deploy CPQ on the cloud or on-premises for flexibility and security.' },
-  { icon: <CheckCircle size={32} className="text-[#1D80AF]" />, title: 'Training & Support', description: 'Empower teams with expert training and ongoing support.' },
+  { icon: <Presentation size={32} className="text-[#1D80AF]" />, title: 'Training & Support', description: 'Empower teams with expert training and ongoing support.' },
 ]
 
 function ServicesSection() {
