@@ -171,7 +171,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
         <header
           className={`fixed top-4 left-2 right-2 z-50 transition-all duration-300 ${
             isScrolled ? "bg-white/80 backdrop-blur-md shadow-lg rounded-xl" : "bg-transparent"
-          } p-4`}
+          } p-2`}
         >
           <div className={`transition-all duration-300 ${isScrolled ? "py-2 px-4" : "py-5 px-4"}`}>
             <div className="relative flex justify-between items-center">
