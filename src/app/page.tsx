@@ -33,7 +33,7 @@ function Hero() {
         alt="Banner Image"
         layout="fill" 
         objectFit="cover" 
-        className="absolute inset-2 rounded-[2.5rem] p-2.5"
+        className="absolute inset-2 rounded-[2.5rem] p-2"
         style={{ filter: "blur(1.0px)" }}
       />
       <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset" />
