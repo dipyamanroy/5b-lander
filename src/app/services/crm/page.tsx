@@ -33,6 +33,32 @@ function Header() {
 
 const services = [
   { 
+    icon: <Image 
+      src="/Dataverse_scalable.svg" 
+      alt="Plugin Development Logo" 
+      width={40} 
+      height={40} 
+    />, 
+    title: 'Plugin Development', 
+    description: 'Extend CRM functionality with custom plugins to automate business logic and enhance processes.' 
+  },
+  { icon: <Zap size={32} className="text-[#90EE90]" />, title: 'Workflow Automation', 
+    description: (
+      <>
+        Streamline operations with automated workflows, Power Automate 
+        <Image 
+          src="/powerautomate.png"  // Local image replacing "PowerApps Component Framework (PCF)"
+          alt="PowerApps Component Framework (PCF)"
+          width={40} 
+          height={40} 
+          className="inline-block align-middle mx-1"
+        /> 
+        flows, and business rules.
+      </>
+    )
+  },
+  { icon: <Server size={32} className="text-[#1D80AF]" />, title: 'System Integrations', description: 'Seamlessly integrate with third-party applications, legacy systems, and cloud services.' },
+  { 
     icon: <Code size={32} className="text-[#90EE90]" />,
     title: 'Custom PCF Controls', // Keeping text for title
     description: (
@@ -49,23 +75,7 @@ const services = [
       </>
     )
   },
-  { icon: <Layers size={32} className="text-[#34BEA5]" />, title: 'Plugin Development', description: 'Extend CRM functionality with custom plugins to automate business logic and enhance processes.' },
-  { icon: <Server size={32} className="text-[#1D80AF]" />, title: 'System Integrations', description: 'Seamlessly integrate with third-party applications, legacy systems, and cloud services.' },
-  { icon: <Zap size={32} className="text-[#90EE90]" />, title: 'Workflow Automation', 
-    description: (
-      <>
-        Streamline operations with automated workflows, Power Automate 
-        <Image 
-          src="/powerautomate.png"  // Local image replacing "PowerApps Component Framework (PCF)"
-          alt="PowerApps Component Framework (PCF)"
-          width={40} 
-          height={40} 
-          className="inline-block align-middle mx-1"
-        /> 
-        flows, and business rules.
-      </>
-    )
-  },
+  
   { icon: <Cloud size={32} className="text-[#34BEA5]" />, title: 'Customization & Configuration', description: 'Modify and extend CRM entities, forms, views, and business logic.' },
   { icon: <RefreshCcw size={32} className="text-[#1D80AF]" />, title: 'Performance Optimization', description: 'Enhance CRM performance with optimizations, scalability improvements, and best practices.' },
 ]
