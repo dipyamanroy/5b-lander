@@ -17,23 +17,7 @@ function Header() {
       <Container className="mt-58 my-32">
         <Heading as="h3">Custom Software Development Services</Heading>
         <Lead className="mt-6 max-w-3xl">
-          Building high-performance web applications with 
-          <Image 
-            src="/dotnet.png"  
-            alt="DotNet Logo"
-            width={50}
-            height={50}
-            className="inline-block align-middle mx-2"
-          />
-          and <br />
-          <Image 
-            src="/react.png"  
-            alt="React Logo"
-            width={50}
-            height={50}
-            className="inline-block align-middle mx-2"
-          />
-          React for businesses of all sizes.
+          Building high-performance web applications with and ReactJS for businesses of all sizes.
         </Lead>
       </Container>
   )
@@ -45,7 +29,22 @@ const services = [
     description: (
       <>
       High-performance applications using 
-      .NET and ReactJS
+      <Image 
+            src="/dotnet.png"  
+            alt="DotNet Logo"
+            width={30}
+            height={30}
+            className="inline-block align-middle mx-2"
+          />
+          and
+          <Image 
+            src="/react.png"  
+            alt="React Logo"
+            width={30}
+            height={30}
+            className="inline-block align-middle mx-1"
+          />
+          React
       </>
     ),
   },
