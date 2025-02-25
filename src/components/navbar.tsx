@@ -154,7 +154,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight
       const isMobile = window.innerWidth < 1024
 
-      if (scrollY < 20 || (!isMobile && scrollY >= maxScroll - 10)) {
+      if (scrollY < 20) {
         setIsScrolled(false)
       } else {
         setIsScrolled(true)
