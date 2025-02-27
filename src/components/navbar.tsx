@@ -18,17 +18,29 @@ const serviceLinks = [
   { href: "/services/cpq", label: "CPQ Implementation" },
   { href: "/services/software", label: "Software Development" },
 ]
-function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
-  const [isOpen, setIsOpen] = useState(false)
-  let closeTimeout: NodeJS.Timeout | null = null
 
-  const handleMouseEnter = () => {
-    if (closeTimeout) clearTimeout(closeTimeout) // Prevent instant close
-    setIsOpen(true)
+const productLinks = [
+  { href: "/products/1staskhr", label: "1stAskHR" },
+]
+
+function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
+  const [isOpenProducts, setIsOpenProducts] = useState(false)
+  const [isOpenServices, setIsOpenServices] = useState(false)
+
+  const handleMouseEnterProducts = () => {
+    setIsOpenProducts(true)
   }
 
-  const handleMouseLeave = () => {
-    closeTimeout = setTimeout(() => setIsOpen(false), 200) // Delay closing
+  const handleMouseLeaveProducts = () => {
+    setIsOpenProducts(false)
+  }
+
+  const handleMouseEnterServices = () => {
+    setIsOpenServices(true)
+  }
+
+  const handleMouseLeaveServices = () => {
+    setIsOpenServices(false)
   }
 
   return (
@@ -41,11 +53,46 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
         About Us
       </Link>
 
+      {/* Products Dropdown with Smooth Fade */}
+      <div
+        className="relative"
+        onMouseEnter={handleMouseEnterProducts}
+        onMouseLeave={handleMouseLeaveProducts}
+      >
+        <button
+          className="px-5 py-3 text-base font-medium text-gray-950 flex items-center gap-2 data-hover:bg-black/[2.5%] rounded-md transition-colors"
+        >
+          Products <ChevronDownIcon className="w-4 h-4" />
+        </button>
+
+        <AnimatePresence>
+          {isOpenProducts && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }}
+              className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
+            >
+              {productLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
+                  onClick={() => setIsOpenProducts(false)} // Close on click
+                >
+                  {label}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
       {/* Services Dropdown with Smooth Fade */}
       <div
         className="relative"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleMouseEnterServices}
+        onMouseLeave={handleMouseLeaveServices}
       >
         <button
           className="px-5 py-3 text-base font-medium text-gray-950 flex items-center gap-2 data-hover:bg-black/[2.5%] rounded-md transition-colors"
@@ -54,11 +101,11 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
         </button>
 
         <AnimatePresence>
-          {isOpen && (
+          {isOpenServices && (
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }} // Smooth fade out
+              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }}
               className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
             >
               {serviceLinks.map(({ href, label }) => (
@@ -66,7 +113,7 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
                   key={href}
                   href={href}
                   className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
-                  onClick={() => setIsOpen(false)} // Close on click
+                  onClick={() => setIsOpenServices(false)} // Close on click
                 >
                   {label}
                 </Link>
@@ -114,6 +161,32 @@ function MobileNav({ close }: { close: () => void }) {
             </Link>
           </motion.div>
         ))}
+
+        {/* Mobile Products Section */}
+        <div>
+          <motion.p
+            initial={{ opacity: 0, rotateX: -90 }}
+            animate={{ opacity: 1, rotateX: 0 }}
+            transition={{ duration: 0.15, ease: "easeInOut" }}
+            className="text-base font-medium text-gray-950"
+          >
+            Products
+          </motion.p>
+          <div className="pl-4 flex flex-col gap-3 mt-2">
+            {productLinks.map(({ href, label }) => (
+              <motion.div
+                key={href}
+                initial={{ opacity: 0, rotateX: -90 }}
+                animate={{ opacity: 1, rotateX: 0 }}
+                transition={{ duration: 0.15, ease: "easeInOut" }}
+              >
+                <Link href={href} className="text-sm text-gray-700" onClick={close}>
+                  {label}
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         {/* Mobile Services Section */}
         <div>
