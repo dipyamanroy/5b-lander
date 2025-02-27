@@ -18,7 +18,7 @@ function CallToAction() {
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the our services for your business and serve your customers better.
+        Get our services for your business and serve your customers better.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="mailto:rohit@fifthbridgetech.com">
