@@ -159,8 +159,7 @@ function DarkBentoSection() {
     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-28">
       <Container>
         <Subheading dark style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <FlaskConical size={24} />
-          AI Labs
+          Products
         </Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
           Working on the Cutting Edge
