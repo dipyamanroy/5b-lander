@@ -1,3 +1,4 @@
+"use client"
 import { Container } from "@/components/container"
 import { Footer } from "@/components/footer"
 import { Gradient, GradientBackground } from "@/components/gradient"
@@ -7,10 +8,12 @@ import { MessageSquare, Database, BarChart2, Users, Briefcase, Brain, Zap, Layou
 import type { Metadata } from "next"
 import { Button } from "@/components/button"
 
-export const metadata: Metadata = {
-  title: "1stAskHR",
-  description: "Revolutionize your HR operations with AI-powered instant answers, insights, and streamlined processes.",
-}
+import { motion } from "framer-motion"
+
+// export const metadata: Metadata = {
+//   title: "1stAskHR",
+//   description: "Revolutionize your HR operations with AI-powered instant answers, insights, and streamlined processes.",
+// }
 
 function Hero() {
     return (
@@ -21,9 +24,12 @@ function Hero() {
         <Container className="relative">
           <div className="pt-48 pb-12 sm:pt-48 sm:pb-24 md:pt-64 md:pb-24 flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
-              <h1 className="font-display text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-gray-950 leading-tight">
-                1stAskHR
-              </h1>
+            <motion.h1
+      className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500"
+    >
+      1stAskHR
+    </motion.h1>
+
               <p className="mt-8 max-w text-base sm:text-xl md:text-2xl font-medium text-gray-950/75">
                 Simplifying HR, Empowering Employees.
               </p>
