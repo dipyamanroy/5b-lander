@@ -27,20 +27,29 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
   const [isOpenProducts, setIsOpenProducts] = useState(false)
   const [isOpenServices, setIsOpenServices] = useState(false)
 
+  let productsTimeout: ReturnType<typeof setTimeout>
+  let servicesTimeout: ReturnType<typeof setTimeout>
+
   const handleMouseEnterProducts = () => {
+    clearTimeout(productsTimeout) // Prevent immediate closing if re-entered
     setIsOpenProducts(true)
   }
 
   const handleMouseLeaveProducts = () => {
-    setIsOpenProducts(false)
+    productsTimeout = setTimeout(() => {
+      setIsOpenProducts(false)
+    }, 150) // Adjust delay (200ms)
   }
 
   const handleMouseEnterServices = () => {
+    clearTimeout(servicesTimeout)
     setIsOpenServices(true)
   }
 
   const handleMouseLeaveServices = () => {
-    setIsOpenServices(false)
+    servicesTimeout = setTimeout(() => {
+      setIsOpenServices(false)
+    }, 150)
   }
 
   return (
