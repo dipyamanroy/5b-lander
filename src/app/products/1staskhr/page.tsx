@@ -80,7 +80,7 @@ function FeaturesSection() {
 function BenefitsSection() {
   return (
     <Container className="mt-24">
-      <h2 className="text-2xl font-semibold text-center mb-12">Who Can Benefit?</h2>
+      <h2 className="text-2xl font-semibold text-center mb-12">Benefits</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <BentoCard
           eyebrow="For HR Professionals"
