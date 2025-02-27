@@ -180,7 +180,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
                 <div className={`py-3 transition-all duration-300 ${isScrolled ? "ml-0" : "md:ml-20 mt-8 scale-120 md:scale-180"}`}>
                   <Link href="/" title="Home" onClick={() => close()}>
                     <Image
-                      src="/logo.eps"
+                      src="/logo.svg"
                       alt="5th Bridge Logo"
                       width={127}
                       height={34}

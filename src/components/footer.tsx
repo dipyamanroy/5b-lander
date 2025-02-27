@@ -172,7 +172,7 @@ export function Footer() {
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Image
-                      src="/logo.eps"
+                      src="/logo.svg"
                       alt="5th Bridge Logo"
                       width={127}
                       height={34}
