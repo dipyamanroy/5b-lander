@@ -176,7 +176,7 @@ function DarkBentoSection() {
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
-            href='https://1staskhr.com'
+            href='https://5b-lander.vercel.app/products/1staskhr'
           />
           <BentoCard
             dark
