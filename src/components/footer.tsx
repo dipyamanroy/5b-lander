@@ -84,8 +84,8 @@ function Sitemap() {
       <div>
         <SitemapHeading>Legal</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
+          <SitemapLink href="https://5b-lander.vercel.app/legal/terms">Terms of Use</SitemapLink>
+          <SitemapLink href="https://5b-lander.vercel.app/legal/privacy">Privacy policy</SitemapLink>
         </SitemapLinks>
       </div>
     </>
