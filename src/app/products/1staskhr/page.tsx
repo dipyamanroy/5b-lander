@@ -19,7 +19,7 @@ function Hero() {
           <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset bg-gradient-to-r from-pink-300 via-blue-300 to-green-300" />
         </div>
         <Container className="relative">
-          <div className="pt-48 pb-24 sm:pt-48 sm:pb-24 md:pt-64 md:pb-24 flex flex-col lg:flex-row">
+          <div className="pt-48 pb-12 sm:pt-48 sm:pb-24 md:pt-64 md:pb-24 flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
               <h1 className="font-display text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-gray-950 leading-tight">
                 1stAskHR
@@ -34,21 +34,24 @@ function Hero() {
                 </Button>
               </div>
             </div>
-            <div className="lg:w-1/2 lg:ml-8">
-              <iframe
-                className="w-full h-90 rounded-2xl" // Added rounded-2xl for rounded edges
-                src="https://www.youtube.com/embed/Ti_9jxxiWnk?si=q8CXQ88HuDM01-7i" // Replace with your YouTube video ID
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <div className="lg:w-1/2 lg:ml-8 mt-8 sm:mt-10 lg:mt-0"> 
+              <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl" // Use absolute positioning for the iframe
+                  src="https://www.youtube.com/embed/Ti_9jxxiWnk?si=q8CXQ88HuDM01-7i" // Replace with your YouTube video ID
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </Container>
       </div>
     );
-  }
+}
+
   const features = [
     {
       icon: <MessageSquare size={32} className="text-[#D5006D]" />,
