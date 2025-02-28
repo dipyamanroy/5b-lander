@@ -164,7 +164,7 @@ function Team() {
           </div>
         </div>
       </div>
-      <Subheading as="h3" className="mt-24">
+      {/* <Subheading as="h3" className="mt-24">
         The team
       </Subheading>
       <hr className="mt-6 border-t border-gray-200" />
@@ -217,7 +217,7 @@ function Team() {
           description="VP, User Experience"
           img="/team/emily-selman.jpg"
         />
-      </ul>
+      </ul> */}
     </Container>
   )
 }

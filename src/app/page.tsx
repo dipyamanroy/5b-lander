@@ -217,9 +217,9 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-10">
+        {/* <Container className="mt-10">
           <LogoCloud />
-        </Container>
+        </Container> */}
         <div className="bg-gradient-to-b from-white via-gray-100 to-white py-32">
           <BentoSection />
           <DarkBentoSection />
