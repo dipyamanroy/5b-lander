@@ -59,7 +59,7 @@ const features = [
   { icon: <Shield size={32} className="text-red-500" />, title: "AI-Powered Threat Detection", description: "Identify and stop unknown attacks using AI knowledge from previous threats." },
   { icon: <Eye size={32} className="text-blue-500" />, title: "Auto Endpoint Detection", description: "Automatically detect endpoints to secure your network perimeter." },
   { icon: <Filter size={32} className="text-green-500" />, title: "Data Filtering", description: "Filter data from endpoints to prevent unauthorized access." },
-  { icon: <Lock size={32} className="text-purple-500" />, title: "IP & Proxy Blocking", description: "Block access from malicious IP addresses and proxies to prevent attacks." },
+  { icon: <Bug size={32} className="text-orange-500" />, title: "Honeypots & Traps", description: "Detect honeypots and analyze malicious actors." },
   { icon: <Database size={32} className="text-yellow-500" />, title: "Database Monitoring", description: "Monitor and log database activity to detect unusual behavior." },
   { icon: <Target size={32} className="text-pink-500" />, title: "User Tracking & Threat Analysis", description: "Track and gather intelligence on suspicious users." },
 ];
@@ -172,10 +172,11 @@ function FeaturesSection() {
     return (
       <Container className="my-24">
         <div className="bg-gradient-to-b from-zinc-500 via-stone-600 to-zinc-900/80 rounded-2xl p-10 text-center">
-          <h2 className="text-2xl text-white font-semibold">Unlock the Potential of AI for Your HR Team</h2>
+          <h2 className="text-2xl text-white font-semibold">
+            Secure Your Network with Addu AI Firewall
+          </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-100">
-            Ready to transform your HR experience? Discover how 1st Ask HR can revolutionize your organization by
-            providing fast, accurate, and proactive HR solutions.
+            Stay ahead of cyber threats with AI-powered protection. Addu AI Firewall detects unknown attacks, filters endpoint data, blocks malicious access, and tracks suspicious activity—keeping your network secure and resilient.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <Button variant="primary" href="rohit@fifthbridgetech.com">
