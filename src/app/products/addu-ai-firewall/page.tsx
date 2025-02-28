@@ -56,12 +56,12 @@ Addu AI Firewall
 }
 
 const features = [
-  { icon: <Shield size={32} className="text-red-500" />, title: "AI-Powered Threat Detection", description: "Identify and stop unknown attacks using AI knowledge from previous threats." },
-  { icon: <Eye size={32} className="text-blue-500" />, title: "Auto Endpoint Detection", description: "Automatically detect endpoints to secure your network perimeter." },
-  { icon: <Filter size={32} className="text-green-500" />, title: "Data Filtering", description: "Filter data from endpoints to prevent unauthorized access." },
-  { icon: <Bug size={32} className="text-orange-500" />, title: "Honeypots & Traps", description: "Detect honeypots and analyze malicious actors." },
-  { icon: <Database size={32} className="text-yellow-500" />, title: "Database Monitoring", description: "Monitor and log database activity to detect unusual behavior." },
-  { icon: <Target size={32} className="text-pink-500" />, title: "User Tracking & Threat Analysis", description: "Track and gather intelligence on suspicious users." },
+  { icon: <Shield size={32} className="text-zinc-500" />, title: "AI-Powered Threat Detection", description: "Identify and stop unknown attacks using AI knowledge from previous threats." },
+  { icon: <Eye size={32} className="text-stone-600" />, title: "Auto Endpoint Detection", description: "Automatically detect endpoints to secure your network perimeter." },
+  { icon: <Filter size={32} className="text-zinc-900" />, title: "Data Filtering", description: "Filter data from endpoints to prevent unauthorized access." },
+  { icon: <Bug size={32} className="text-zinc-500" />, title: "Honeypots & Traps", description: "Detect honeypots and analyze malicious actors." },
+  { icon: <Database size={32} className="text-stone-600" />, title: "Database Monitoring", description: "Monitor and log database activity to detect unusual behavior." },
+  { icon: <Target size={32} className="text-zinc-900" />, title: "User Tracking & Threat Analysis", description: "Track and gather intelligence on suspicious users." },
 ];
 
 function FeaturesSection() {
