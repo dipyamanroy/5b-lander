@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { Gradient, GradientBackground } from "@/components/gradient"
 import { Heading, Lead } from "@/components/text"
 import { BentoCard } from "@/components/bento-card"
-import { MessageSquare, Database, BarChart2, Users, Briefcase, Brain, Zap, Layout, Scale, Shield, Eye, Filter, Lock, Bug, Target } from "lucide-react"
+import { MessageSquare, Database, BarChart2, Users, Briefcase, Brain, Zap, Layout, Scale, Shield, Eye, Filter, Lock, Bug, Target, ShieldAlert } from "lucide-react"
 import type { Metadata } from "next"
 import { Button } from "@/components/button"
 import Image from "next/image"
@@ -28,14 +28,17 @@ function Hero() {
           <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset bg-gradient-to-b from-zinc-500/10 via-stone-600/80 to-zinc-900/80" />
         </div>
         <Container className="relative">
-          <div className="pt-48 pb-12 sm:pt-48 sm:pb-32 md:pt-64 md:pb-32 flex flex-col lg:flex-row">
+          <div className="pt-48 pb-24 sm:pt-62 sm:pb-12 md:pt-48 md:pb-24 flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
+            <div className="flex flex-col space-y-2">
+            <Shield className="w-12 h-12 text-black-500 sm:w-14 sm:h-14 md:w-16 md:h-16" />
             <h1
   className="font-display text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r  from-black to-zinc-200
 "
 >
 Addu AI Firewall
 </h1>
+</div>
 
               <p className="mt-8 max-w text-base sm:text-xl md:text-2xl font-medium text-gray-100/75">
               Next-gen AI-powered security to detect and prevent unknown attacks in real-time.
