@@ -90,18 +90,17 @@ function BentoSection() {
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
-        
         <BentoCard
           eyebrow="Dynamics 365 CRM"
           title={
-            <div className="flex items-center gap-2">
-              <img
-                src="/dynamics365logo.png"
-                alt="Revalize Logo"
-                className="h-15"
-              />
-              <span>Solutions</span>
-            </div>
+            <div className="flex items-center gap-2 flex-wrap">
+            <img
+              src="/dynamics365logo.png"
+              alt="Revalize Logo"
+              className="h-15 w-auto"
+            />
+            <span >Solutions</span>
+          </div>
           }
           description="We specialize in creating custom solutions for Microsoft Dynamics 365 CRM. Whether you need tailored UI components, automated processes, or deep 
 system integrations, we deliver robust and scalable solutions. "
@@ -115,11 +114,11 @@ system integrations, we deliver robust and scalable solutions. "
         <BentoCard
           eyebrow="Revalize CPQ"
           title={
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <img
                 src="/revalize.png"
                 alt="Revalize Logo"
-                className="h-10"
+                className="h-10 w-auto"
               />
               <span>CPQ Solutions</span>
             </div>

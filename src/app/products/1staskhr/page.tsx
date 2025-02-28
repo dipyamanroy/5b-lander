@@ -24,11 +24,12 @@ function Hero() {
         <Container className="relative">
           <div className="pt-48 pb-12 sm:pt-48 sm:pb-24 md:pt-64 md:pb-24 flex flex-col lg:flex-row">
             <div className="lg:w-1/2">
-            <motion.h1
-      className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500"
-    >
-      1stAskHR
-    </motion.h1>
+            <h1
+  className="font-display text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500"
+>
+  1stAskHR
+</h1>
+
 
               <p className="mt-8 max-w text-base sm:text-xl md:text-2xl font-medium text-gray-950/75">
                 Simplifying HR, Empowering Employees.
