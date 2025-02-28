@@ -63,40 +63,7 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
         About Us
       </Link>
 
-      {/* Products Dropdown with Smooth Fade */}
-      <div
-        className="relative"
-        onMouseEnter={handleMouseEnterProducts}
-        onMouseLeave={handleMouseLeaveProducts}
-      >
-        <button
-          className="px-5 py-3 text-base font-medium text-gray-950 flex items-center gap-2 data-hover:bg-black/[2.5%] rounded-md transition-colors"
-        >
-          Products <ChevronDownIcon className="w-4 h-4" />
-        </button>
-
-        <AnimatePresence>
-          {isOpenProducts && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }}
-              className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
-            >
-              {productLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
-                  onClick={() => setIsOpenProducts(false)} // Close on click
-                >
-                  {label}
-                </Link>
-              ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+      
 
       {/* Services Dropdown with Smooth Fade */}
       <div
@@ -133,6 +100,41 @@ function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
         </AnimatePresence>
       </div>
 
+
+          {/* Products Dropdown with Smooth Fade */}
+      <div
+        className="relative"
+        onMouseEnter={handleMouseEnterProducts}
+        onMouseLeave={handleMouseLeaveProducts}
+      >
+        <button
+          className="px-5 py-3 text-base font-medium text-gray-950 flex items-center gap-2 data-hover:bg-black/[2.5%] rounded-md transition-colors"
+        >
+          Products <ChevronDownIcon className="w-4 h-4" />
+        </button>
+
+        <AnimatePresence>
+          {isOpenProducts && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10, transition: { duration: 0.2 } }}
+              className="absolute left-0 mt-2 w-56 bg-white/80 backdrop-blur-md shadow-lg rounded-lg overflow-hidden"
+            >
+              {productLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="block px-5 py-3 text-base text-gray-950 data-hover:bg-black/[2.5%] transition-colors"
+                  onClick={() => setIsOpenProducts(false)} // Close on click
+                >
+                  {label}
+                </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
       {/* Careers */}
       <Link
         href="/careers"
