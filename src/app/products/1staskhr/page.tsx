@@ -68,33 +68,33 @@ function Hero() {
 
   const features = [
     {
-      icon: <MessageSquare size={32} className="text-[#D5006D]" />,
+      icon: <MessageSquare size={32} className="text-pink-400" />,
       title: "Instant Q&A",
       description:
         "Get real-time responses to HR-related queries, minimizing downtime for employees and reducing the workload on HR teams.",
     },
     {
-      icon: <Database size={32} className="text-[#3F51B5]" />,
+      icon: <Database size={32} className="text-blue-500" />,
       title: "Comprehensive Knowledge Base",
       description: "Ensure accurate answers by leveraging your organization's existing HR database and resources.",
     },
     {
-      icon: <BarChart2 size={32} className="text-[#4CAF50]" />,
+      icon: <BarChart2 size={32} className="text-green-500" />,
       title: "AI Insights",
       description: "Spot trends and patterns in employee concerns, helping HR teams proactively address common issues.",
     },
     {
-      icon: <Layout size={32} className="text-[#D5006D]" />,
+      icon: <Layout size={32} className="text-pink-400" />,
       title: "Easy Navigation",
       description: "Enjoy a clean, intuitive design that ensures a seamless experience for all users.",
     },
     {
-      icon: <Scale size={32} className="text-[#3F51B5]" />,
+      icon: <Scale size={32} className="text-blue-500" />,
       title: "Scalability",
       description: "From small startups to large enterprises, 1st Ask HR is built to support organizations of all sizes.",
     },
     {
-      icon: <Zap size={32} className="text-[#4CAF50]" />,
+      icon: <Zap size={32} className="text-green-500" />,
       title: "Time Efficiency",
       description: "Save valuable time with immediate answers instead of waiting for HR responses.",
     },
