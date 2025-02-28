@@ -123,7 +123,7 @@ function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
 function SocialLinks() {
   return (
     <>
-      <Link
+      {/* <Link
         href="https://facebook.com"
         target="_blank"
         aria-label="Visit us on Facebook"
@@ -138,9 +138,9 @@ function SocialLinks() {
         className="text-gray-950 data-hover:text-gray-950/75"
       >
         <SocialIconX className="size-4" />
-      </Link>
+      </Link> */}
       <Link
-        href="https://linkedin.com"
+        href="https://linkedin.com/company/5th-bridge-data-technologies"
         target="_blank"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-hover:text-gray-950/75"
