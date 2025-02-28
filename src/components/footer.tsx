@@ -63,7 +63,7 @@ function Sitemap() {
         <SitemapHeading>Products</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="https://https://5b-lander.vercel.app/products/1staskhr">1stAskHR</SitemapLink>
-          <SitemapLink href="#">Addu AI Firewall</SitemapLink>
+          <SitemapLink href="https://https://5b-lander.vercel.app/products/addu-ai-firewall">Addu AI Firewall</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
@@ -154,7 +154,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} 5th Bridge Data Technologies LLP.
+      &copy; {new Date().getFullYear()} 5th Bridge Data Technologies LLP
     </div>
   )
 }

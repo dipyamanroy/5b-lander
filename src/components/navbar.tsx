@@ -21,6 +21,7 @@ const serviceLinks = [
 
 const productLinks = [
   { href: "/products/1staskhr", label: "1stAskHR" },
+  { href: "/products/addu-ai-firewall", label: "Addu AI Firewall" },
 ]
 
 function DesktopNav({ isScrolled }: { isScrolled: boolean }) {
