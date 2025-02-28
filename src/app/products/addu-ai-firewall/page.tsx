@@ -175,7 +175,7 @@ function FeaturesSection() {
             providing fast, accurate, and proactive HR solutions.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Button variant="secondary" href="rohit@fifthbridgetech.com">
+          <Button variant="primary" href="rohit@fifthbridgetech.com">
                   Contact Support
                 </Button>
           </div>
