@@ -25,7 +25,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="png" />
-        <meta property="og:url" content="https://5b-lander.vercel.app" />
+        <meta property="og:url" content="https://www.fifthbridgetech.com" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card for better Twitter link previews */}

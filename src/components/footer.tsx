@@ -54,16 +54,16 @@ function Sitemap() {
       <div>
         <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://5b-lander.vercel.app/services/crm">CRM</SitemapLink>
-          <SitemapLink href="https://5b-lander.vercel.app/services/cpq">CPQ</SitemapLink>
-          <SitemapLink href="https://5b-lander.vercel.app/services/software">Software Development</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/services/crm">CRM</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/services/cpq">CPQ</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/services/software">Software Development</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
         <SitemapHeading>Products</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://5b-lander.vercel.app/products/1staskhr">1stAskHR</SitemapLink>
-          <SitemapLink href="https://5b-lander.vercel.app/products/addu-ai-firewall">Addu AI Firewall</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/products/1staskhr">1stAskHR</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/products/addu-ai-firewall">Addu AI Firewall</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
@@ -84,8 +84,8 @@ function Sitemap() {
       <div>
         <SitemapHeading>Legal</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://5b-lander.vercel.app/legal/terms">Terms of Use</SitemapLink>
-          <SitemapLink href="https://5b-lander.vercel.app/legal/privacy">Privacy policy</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/legal/terms">Terms of Use</SitemapLink>
+          <SitemapLink href="https://www.fifthbridgetech.com/legal/privacy">Privacy policy</SitemapLink>
         </SitemapLinks>
       </div>
     </>

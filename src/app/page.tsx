@@ -175,7 +175,7 @@ function DarkBentoSection() {
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
-            href='https://5b-lander.vercel.app/products/1staskhr'
+            href='https://www.fifthbridgetech.com/products/1staskhr'
           />
           <BentoCard
             dark
@@ -185,7 +185,7 @@ function DarkBentoSection() {
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
-            href='https://5b-lander.vercel.app/products/addu-ai-firewall'
+            href='https://www.fifthbridgetech.com/products/addu-ai-firewall'
           />
           {/* <BentoCard
             dark
