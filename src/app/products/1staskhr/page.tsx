@@ -1,4 +1,3 @@
-"use client"
 import { Container } from "@/components/container"
 import { Footer } from "@/components/footer"
 import { Gradient, GradientBackground } from "@/components/gradient"
@@ -7,19 +6,26 @@ import { BentoCard } from "@/components/bento-card"
 import { MessageSquare, Database, BarChart2, Users, Briefcase, Brain, Zap, Layout, Scale } from "lucide-react"
 import type { Metadata } from "next"
 import { Button } from "@/components/button"
+import Image from "next/image"
 
-import { motion } from "framer-motion"
-
-// export const metadata: Metadata = {
-//   title: "1stAskHR",
-//   description: "Revolutionize your HR operations with AI-powered instant answers, insights, and streamlined processes.",
-// }
+export const metadata: Metadata = {
+  title: "1stAskHR",
+  description: "Revolutionize your HR operations with AI-powered instant answers, insights, and streamlined processes.",
+}
 
 function Hero() {
     return (
       <div className="relative">
-        <div className="rounded-4xl overflow-hidden"> {/* Parent container */}
-          <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset bg-gradient-to-r from-pink-300 via-blue-300 to-green-300" />
+        <div className="rounded-4xl overflow-hidden">
+          <Image
+                  src="/banner2.jpg"
+                  alt="Banner Image"
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="absolute inset-2 rounded-[2.5rem] p-2"
+                  style={{ filter: "blur(1.0px)" }}
+                />
+          <Gradient className="absolute inset-2 p-3 rounded-4xl ring-1 ring-black/5 ring-inset bg-gradient-to-r from-pink-200/80 via-blue-300/80 to-green-300/80" />
         </div>
         <Container className="relative">
           <div className="pt-48 pb-12 sm:pt-48 sm:pb-24 md:pt-64 md:pb-24 flex flex-col lg:flex-row">
