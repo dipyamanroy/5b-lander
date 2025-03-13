@@ -158,7 +158,7 @@ function DarkBentoSection() {
     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-28">
       <Container>
         <Subheading dark style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          Products
+          Artificial Intelligence
         </Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
           Working on the Cutting Edge
@@ -171,7 +171,7 @@ function DarkBentoSection() {
             title="Have AI Answer all your employees' HR queries with 1stAskHR"
             description="Whether you are a part of an HR team or an employee seeking quick solutions, 1stAskHR is your go-to tool for fast, accurate, and reliable answers. It integrates seamlessly with your organization’s HR database, ensuring every answer aligns with your company’s policies and procedures. "
             graphic={
-              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:851px_344px] bg-no-repeat"  />
+              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:1050px_400px] bg-no-repeat"  />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -187,6 +187,53 @@ function DarkBentoSection() {
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
             href='https://www.fifthbridgetech.com/products/addu-ai-firewall'
           />
+          <BentoCard
+          dark
+          eyebrow="Large Language Models"
+          title={
+            <span >Chatbots around LLMs</span>
+          }
+          description="We develop custom AI chatbots tailored to your business needs, ensuring seamless automation, enhanced engagement, and scalable, secure solutions."
+          graphic={
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 bg-[url(/chatbot.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
+            </div>
+          }
+          fade={['bottom']}
+          className="lg:col-span-2 lg:rounded-bl-4xl"
+        />
+        <BentoCard
+        dark
+          eyebrow="Custom Models"
+          title={
+              <span>Custom applications/models using pre-trained AI</span>
+          }
+          description="We build AI-driven applications that seamlessly integrate with your systems, ensuring optimized performance and cost-effective scalability.
+ "
+          graphic={
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 bg-[url(/custommodel.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
+            </div>
+          }
+          fade={['bottom']}
+          className="lg:col-span-2"
+        />
+        <BentoCard
+        dark
+          eyebrow="Consulting"
+          title="AI Consulting to Optimize your Business"
+          description="We tailor AI solutions for Manufacturing, Healthcare, and Technology, streamlining processes, reducing costs, enhancing decision-making, and driving innovation."
+          graphic={
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 bg-[url(/consulting.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
+            </div>
+          }
+          fade={['bottom']}
+          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
+        />
           {/* <BentoCard
             dark
             eyebrow="Meetings"
