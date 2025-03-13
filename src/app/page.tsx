@@ -123,7 +123,7 @@ system integrations, we deliver robust and scalable solutions. "
               <span>CPQ Solutions</span>
             </div>
           }
-          description="We specialize in customizing and implementing Powertrak CPQ to optimize your sales 
+          description="We specialize in customizing and implementing Revalize CPQ to optimize your sales 
 operations, and automate pricing and quoting, ensuring seamless integration with your existing CRM and ERP systems. 
  "
           graphic={
