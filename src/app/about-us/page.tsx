@@ -140,13 +140,23 @@ function Team() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Rohit Challu, the founder of 5th Bridge Data Technologies LLP, worked for close to a decade in the U.S. at Axonom Inc, a leading software vendor in the CRM/CPQ space. In this avatar he worked on many complex and unique CRM implementations, many of which went on to be featured as case studies by Microsoft.
+          Founded in 2014, 5th Bridge Data Technologies LLP set out to deliver high-
+value, specialized technology solutions. With deep expertise in Microsoft 
+Dynamics CRM, we built and customized complex CRM implementations, 
+helping businesses optimize operations and drive digital transformation. 
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-          He started 5th Bridge Data Technologies LLP in 2014 in Hyderabad, India,  with a view to leverage his expertise, to establish a full portfolio specialized technology services firm. His vision was to develop a specialist firm that is uniquely placed to partner with clients on their digital transformation journeys
+          Over 11 years, 5th Bridge has evolved into a trusted partner for custom .NET 
+development, legacy code refactoring, and AI-powered solutions. We 
+modernize outdated codebases, integrate AI-driven capabilities, and develop 
+innovative products such as LLM wrappers, AI-powered chatbots, and an 
+application firewall enhanced through refined model training. 
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-          As a highly specialized technology service provider 5th Bridge Data Technologies LLP has continually added niche services to its portfolio, the latest foray being AI, 3-D and VR solutions for digital transformation of businesses.
+          With a proven track record in Dynamics CRM modernization and AI 
+integration, we continue to bridge the gap between legacy systems and 
+cutting-edge technology—empowering businesses with scalable, intelligent 
+solutions for the future. 
           </p>
           <div className="mt-10">
             <Button className="w-full sm:w-auto" href="/careers">

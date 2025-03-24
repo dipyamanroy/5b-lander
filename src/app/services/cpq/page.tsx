@@ -24,7 +24,7 @@ function Header() {
                 className="inline-block align-middle mx-5"
               /> CPQ Customization & Implementation</Heading> 
             <Lead className="mt-6 max-w-3xl">
-            Streamline your sales process with customized Powertrak CPQ solutions tailored to your business needs.
+            Streamline your sales process with customized Revalize CPQ solutions tailored to your business needs.
             </Lead>
     </Container>
   )
