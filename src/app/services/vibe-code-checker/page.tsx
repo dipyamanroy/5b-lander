@@ -9,8 +9,8 @@ import { Button } from "@/components/button"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "1stAskHR",
-  description: "Revolutionize your HR operations with AI-powered instant answers, insights, and streamlined processes.",
+  title: "Vibe Code Checker",
+  description: "You vibe, we check.",
 }
 
 function Hero() {
