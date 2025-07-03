@@ -80,7 +80,7 @@ function FeatureSection() {
   )
 }
 
-function BentoSection() {
+function BentoSection1() {
   return (
     <div className='mb-32'>
 <Container>
@@ -165,35 +165,14 @@ function DarkBentoSection() {
         </Heading>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
-          <BentoCard
-            dark
-            eyebrow="Human Resources"
-            title="Have AI Answer all your employees' HR queries with 1stAskHR"
-            description="Whether you are a part of an HR team or an employee seeking quick solutions, 1stAskHR is your go-to tool for fast, accurate, and reliable answers. It integrates seamlessly with your organization’s HR database, ensuring every answer aligns with your company’s policies and procedures. "
-            graphic={
-              <div className="h-85 bg-[url(/screenshots/1staskhr.png)] bg-[size:1050px_400px] bg-no-repeat"  />
-            }
-            fade={['top']}
-            className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
-            href='https://www.fifthbridgetech.com/products/1staskhr'
-          />
-          <BentoCard
-            dark
-            eyebrow="Security"
-            title="Protect every communication with Addu AI Firewall"
-            description="Our AI-driven security detects unknown threats by learning from known attacks while proactively blocking malicious access. "
-            graphic={<LogoTimeline />}
-            // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
-            className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
-            href='https://www.fifthbridgetech.com/products/addu-ai-firewall'
-          />
+          
           <BentoCard
           dark
-          eyebrow="Large Language Models"
+          eyebrow="Discovery"
           title={
-            <span >Chatbots around LLMs</span>
+            <span >Find your AI goldmine, <br/>then strike it</span>
           }
-          description="We develop custom AI chatbots tailored to your business needs, ensuring seamless automation, enhanced engagement, and scalable, secure solutions."
+          description="Uncover hidden opportunities in your business and leverage AI to drive growth."
           graphic={
             <div className="absolute inset-0">
               <div className="absolute inset-0 bg-[url(/chatbot.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
@@ -201,15 +180,17 @@ function DarkBentoSection() {
             </div>
           }
           fade={['bottom']}
-          className="lg:col-span-2 lg:rounded-bl-4xl"
+          className="lg:col-span-2 lg:rounded-l-4xl"
         />
         <BentoCard
         dark
-          eyebrow="Custom Models"
+          eyebrow="Execution"
           title={
-              <span>Custom applications/models using pre-trained AI</span>
+              <span>From strategy to live systems</span>
           }
-          description="We build AI-driven applications that seamlessly integrate with your systems, ensuring optimized performance and cost-effective scalability.
+          description="With the right AI opportunities,
+we build solutions that deliver
+business value.
  "
           graphic={
             <div className="absolute inset-0">
@@ -222,9 +203,11 @@ function DarkBentoSection() {
         />
         <BentoCard
         dark
-          eyebrow="Consulting"
-          title="AI Consulting to Optimize your Business"
-          description="We tailor AI solutions for Manufacturing, Healthcare, and Technology, streamlining processes, reducing costs, enhancing decision-making, and driving innovation."
+          eyebrow="Future-proof"
+          title="We implement for the future"
+          description="Not only do build AI, but launch
+and maintain them, for new use
+cases and continued growth."
           graphic={
             <div className="absolute inset-0">
               <div className="absolute inset-0 bg-[url(/consulting.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
@@ -232,7 +215,7 @@ function DarkBentoSection() {
             </div>
           }
           fade={['bottom']}
-          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
+          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-r-4xl"
         />
           {/* <BentoCard
             dark
@@ -259,6 +242,47 @@ function DarkBentoSection() {
   )
 }
 
+function BentoSection2() {
+  return (
+    <div className='mt-32'>
+<Container>
+      <Subheading>Products</Subheading>
+      <Heading as="h3" className="mt-2 max-w-3xl">
+        Some of our offerings
+      </Heading>
+
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
+        
+<BentoCard
+            
+            eyebrow="Human Resources"
+            title="Have AI Answer all your employees' HR queries with 1stAskHR"
+            description="Whether you are a part of an HR team or an employee seeking quick solutions, 1stAskHR is your go-to tool for fast, accurate, and reliable answers. It integrates seamlessly with your organization’s HR database, ensuring every answer aligns with your company’s policies and procedures. "
+            graphic={
+              <div className="h-80 bg-[url(/screenshots/1staskhr.png)] bg-[size:1050px_400px] bg-no-repeat"  />
+            }
+            fade={['bottom']}
+            className="max-lg:rounded-l-4xl lg:col-span-4 lg:rounded-l-4xl"
+            href='https://www.fifthbridgetech.com/products/1staskhr'
+          />
+          <BentoCard
+            eyebrow="Security"
+            title="Protect every communication with Addu AI Firewall"
+            description="Our AI-driven security detects unknown threats by learning from known attacks while proactively blocking malicious access. "
+            graphic={<LogoTimeline />}
+            fade={['bottom']}
+
+            // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
+            className="z-10 overflow-visible! lg:col-span-2 lg:rounded-r-4xl"
+            href='https://www.fifthbridgetech.com/products/addu-ai-firewall'
+          />
+      </div>
+    </Container>
+    </div>
+    
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -268,8 +292,9 @@ export default function Home() {
           <LogoCloud />
         </Container> */}
         <div className="bg-gradient-to-b from-white via-gray-100 to-white py-32">
-          <BentoSection />
+          <BentoSection1 />
           <DarkBentoSection />
+          <BentoSection2/>
         </div>
       </main>
       {/* <Testimonials /> */}
