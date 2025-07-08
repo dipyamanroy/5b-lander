@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: '5th Bridge',
     images: [
       {
-        url: 'https://i.ibb.co/0RsFPwg0/Screenshot-from-2025-02-20-21-44-38.png',
+        url: 'https://previewengine-accl.zohoexternal.com/image/WD/1ix3105e9b64a256b478bb1d61720b3ed9213?version=1.0&width=2046&height=1536',
         width: 1200,
         height: 630,
         type: 'image/png',
