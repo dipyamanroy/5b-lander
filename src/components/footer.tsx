@@ -21,7 +21,7 @@ function CallToAction() {
         Get our services for your business and serve your customers better.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="mailto:rohit@fifthbridgetech.com">
+        <Button className="w-full sm:w-auto" href="https://cal.com/challu">
           Contact Us
         </Button>
       </div>

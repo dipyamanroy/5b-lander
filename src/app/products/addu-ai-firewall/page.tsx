@@ -44,7 +44,7 @@ Addu AI Firewall
               Next-gen AI-powered security to detect and prevent unknown attacks in real-time.
               </p>
               <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-                <Button variant="secondary" href="mailto:rohit@fifthbridgetech.com">
+                <Button variant="secondary" href="https://cal.com/challu">
                   Contact Support
                 </Button>
               </div>

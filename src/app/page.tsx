@@ -51,7 +51,7 @@ function Hero() {
           so you can focus on what you do best, serving your customers.
         </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="mailto:rohit@fifthbridgetech.com">Contact Us</Button>
+            <Button href="https://cal.com/challu">Contact Us</Button>
             <Button variant="secondary" href="/careers">
               Careers
             </Button>
