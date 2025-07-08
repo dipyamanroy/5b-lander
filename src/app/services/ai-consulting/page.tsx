@@ -51,7 +51,7 @@ function Header() {
           </Lead>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-gradient-to-r from-green-700 to-blue-700 hover:from-green-800 hover:to-blue-800 text-white">
-              <Link href="mailto:rohitchallu@fifthbridgetech.com">Schedule Consultation</Link>
+              <Link href="mailto:rohit@fifthbridgetech.com">Schedule Consultation</Link>
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
            
@@ -272,7 +272,7 @@ function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800">
-             <Link href="mailto:rohitchallu@fifthbridgetech.com">Schedule Consultation</Link>
+             <Link href="mailto:rohit@fifthbridgetech.com">Schedule Consultation</Link>
             </Button>
           </div>
         </CardContent>
