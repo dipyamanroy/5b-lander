@@ -181,6 +181,7 @@ function DarkBentoSection() {
           }
           fade={['bottom']}
           className="lg:col-span-2 lg:rounded-l-4xl"
+          href='/services/ai-consulting'
         />
         <BentoCard
         dark
@@ -200,6 +201,7 @@ business value.
           }
           fade={['bottom']}
           className="lg:col-span-2"
+          href='/services/ai-consulting'
         />
         <BentoCard
         dark
@@ -216,6 +218,7 @@ cases and continued growth."
           }
           fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-r-4xl"
+          href='/services/ai-consulting'
         />
           {/* <BentoCard
             dark

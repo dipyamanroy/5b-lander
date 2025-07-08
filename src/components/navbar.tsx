@@ -14,6 +14,7 @@ const links = [
 ]
 
 const serviceLinks = [
+  { href: "/services/ai-consulting", label: "AI Consulting" },
   { href: "/services/crm", label: "CRM Solutions" },
   { href: "/services/cpq", label: "CPQ Implementation" },
   { href: "/services/software", label: "Software Development" },
