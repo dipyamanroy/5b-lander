@@ -288,9 +288,9 @@ export default function AIConsulting() {
       <Header />
       <ServicesSection />
       <WorkflowSection />
-      <StatsSection />
-      <IndustriesSection />
-      <CTASection />
+      {/* <StatsSection /> */}
+      {/* <IndustriesSection /> */}
+      {/* <CTASection /> */}
       <Footer />
     </main>
   )
