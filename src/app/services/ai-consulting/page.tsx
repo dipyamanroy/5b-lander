@@ -129,8 +129,8 @@ function Header() {
             </div> */}
 
             <Heading className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-green-400 via-blue-500 to-green-600 bg-clip-text text-transparent leading-tight font-extrabold">
-              Transform Your Business with <br className="hidden sm:block" />
-              <span className="relative">Intelligent AI Solutions</span>
+              Transform Your Business with <br />
+              Intelligent AI Solutions
             </Heading>
 
             <Lead className="text-xl mt-8 max-w-4xl mx-auto text-gray-600 px-4 leading-relaxed">
