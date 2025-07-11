@@ -179,7 +179,7 @@ function FeaturesSection() {
             Stay ahead of cyber threats with AI-powered protection. Addu AI Firewall detects unknown attacks, filters endpoint data, blocks malicious access, and tracks suspicious activity—keeping your network secure and resilient.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Button variant="primary" href="rohit@fifthbridgetech.com">
+          <Button variant="primary" href="http://cal.com/challu">
                   Contact Support
                 </Button>
           </div>
