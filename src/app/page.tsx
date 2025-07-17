@@ -80,39 +80,119 @@ function FeatureSection() {
   )
 }
 
-function BentoSection1() {
+function BentoSection() {
   return (
-    <div className='mb-32'>
-<Container>
-      <Subheading>Services</Subheading>
+    <Container>
+      <Subheading>AI Consulting</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        How we help your business
+        AI That Delivers, <br /> Not Just Demos.
+      </Heading>
+
+      <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1 mb-32">
+        <BentoCard
+          eyebrow="Discovery"
+          title="Find your AI goldmine, then strike it."
+          description="Uncover hidden opportunities and inefficiencies lurking in your business processes."
+          graphic={
+            <div
+              className="h-80 bg-no-repeat"
+              style={{
+                backgroundImage: "url('/giphy3.gif')",
+                backgroundSize: "700px 700px",
+                backgroundPosition: "left -75px top -80px",
+              }}
+            />
+          }
+          fade={['bottom']}
+          className="lg:col-span-2 lg:rounded-tl-4xl lg:rounded-bl-4xl"
+          href='/services/ai-consulting'
+        />
+        <BentoCard
+          eyebrow="Execution"
+          title={
+              <span>From strategy to live systems that deliver.</span>
+          }
+          description="With the right AI opportunities, we build solutions that deliver business value."      
+          graphic={
+            <div
+              className="h-80 bg-no-repeat"
+              style={{
+                backgroundImage: "url('/giphy2.gif')",
+                backgroundSize: "650px 366px",
+                backgroundPosition: "left 0px top -10px",
+              }}
+            />
+          }  
+          fade={['bottom']}
+          className="lg:col-span-2"
+          href='/services/ai-consulting'
+        />
+        <BentoCard
+          eyebrow="Future-proof"
+          title="We implement solutions for the future"
+          description="Not only do build AI, but launch and maintain them, for new use cases and continued growth."
+          graphic={
+            <div
+              className="h-80 bg-no-repeat"
+              style={{
+                backgroundImage: "url('/giphy5.gif')",
+                backgroundSize: "450px 450px",
+                backgroundPosition: "left -10px top -20px",
+              }}
+            />
+          }  
+          fade={['bottom']}
+          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-tr-4xl lg:rounded-br-4xl"
+        />
+      </div>
+    </Container>
+  )
+}
+
+function DarkBentoSection() {
+  return (
+    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-24">
+      <Container>
+      <Subheading dark style={{ display: "flex", alignItems: "center", gap: 8 }}>Software services</Subheading>
+      <Heading dark as="h3" className="mt-2 max-w-3xl">
+        Our Service Portfolio.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
         <BentoCard
-          eyebrow="Dynamics 365 CRM"
-          title={
-            <span className="flex items-center gap-2 flex-wrap">
-              <img
-                src="/dynamics365logo.png"
-                alt="Dynamics 365 Logo"
-                className="h-10 w-auto"
-              />
-              Solutions
-            </span>
-          }
-          description="We specialize in creating custom solutions for Microsoft Dynamics 365 CRM. Whether you need tailored UI components, automated processes, or deep 
-system integrations, we deliver robust and scalable solutions. "
+          dark
+          eyebrow="Customer Relationship Management"
+            title={
+              <span className="flex items-center gap-2 flex-wrap">
+                <img
+                  src="/dynamics365.svg"
+                  alt="Dynamics 365 Logo"
+                  className="h-10 w-auto"
+                />
+                Dynamics 365 Solutions
+              </span>
+            }
+          description="We specialize in creating custom solutions for Microsoft Dynamics 365 CRM. Whether you need tailored UI components, automated processes, or deep system integrations, we deliver robust and scalable solutions."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/dynamics.png)] bg-[size:1000px_560px] bg-[left_-10px_top_-10px] bg-no-repeat" />
+            <div className="relative h-80">
+            <div
+              className="absolute inset-0 bg-no-repeat"
+              style={{
+                backgroundImage: "url('/screenshots/dynamics.png')",
+                backgroundSize: "719px 406px",
+                backgroundPosition: "left -5px top -5px",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1e2939]" />
+          </div>
           }
           fade={['bottom']}
-          className="lg:col-span-2 lg:rounded-bl-4xl"
+          className="lg:col-span-2 lg:rounded-tl-4xl lg:rounded-bl-4xl"
           href='/services/crm'
         />
         <BentoCard
-          eyebrow="Revalize CPQ"
+          dark
+          eyebrow="Configure Price Quote"
           title={
             <span className="flex items-center gap-2 flex-wrap">
               <img
@@ -120,127 +200,50 @@ system integrations, we deliver robust and scalable solutions. "
                 alt="Revalize Logo"
                 className="h-10 w-auto"
               />
-              CPQ Solutions
+              Revalize CPQ Solutions
             </span>
           }
-          description="We specialize in customizing and implementing Revalize CPQ to optimize your sales 
-operations, and automate pricing and quoting, ensuring seamless integration with your existing CRM and ERP systems. 
- "
+          description="We specialize in customizing and implementing Revalize CPQ to optimize your sales operations, and automate pricing and quoting, ensuring seamless integration with your existing CRM and ERP systems."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/cpq.png)] bg-[size:1100px_650px] bg-[left_-500px_top_-100px] bg-no-repeat" />
-          }
+            <div className="relative h-80">
+              <div
+                className="h-80 bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/screenshots/cpq.png')",
+                  backgroundSize: "657px 370px",
+                  backgroundPosition: "left -20px top -25px",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1e2939]" />
+            </div>
+          }  
           fade={['bottom']}
           className="lg:col-span-2"
           href='/services/cpq'
         />
         <BentoCard
+          dark
           eyebrow="Software"
-          title="Software Development Services"
-          description="We develop robust, scalable, and secure web applications tailored to your 
-business needs. With expertise in the .NET framework and ReactJS, we create seamless 
-digital experiences that drive efficiency and growth. "
-          graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/app.jpg)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
-          }
+          title="Software Development"
+          description="We develop robust, scalable, and secure web applications tailored to your business needs. With expertise in the .NET framework and ReactJS, we create seamless digital experiences that drive efficiency and growth. "graphic={
+            <div className="relative h-80">
+              <div
+                className="h-80 bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/screenshots/app.jpg')",
+                  backgroundSize: "648px 430px",
+                  backgroundPosition: "left -60px top -70px",
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1e2939]" />
+            </div>
+          } 
           fade={['bottom']}
-          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
+          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-tr-4xl lg:rounded-br-4xl"
           href='/services/software'
         />
       </div>
     </Container>
-    </div>
-    
-  )
-}
-
-function DarkBentoSection() {
-  return (
-    <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-28">
-      <Container>
-        <Subheading dark style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          Artificial Intelligence
-        </Subheading>
-        <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Working on the Cutting Edge
-        </Heading>
-
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
-          
-          <BentoCard
-          dark
-          eyebrow="Discovery"
-          title={
-            <span >Find your AI goldmine, <br/>then strike it</span>
-          }
-          description="Uncover hidden opportunities in your business and leverage AI to drive growth."
-          graphic={
-            <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-[url(/chatbot.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
-            </div>
-          }
-          fade={['bottom']}
-          className="lg:col-span-2 lg:rounded-l-4xl"
-          href='/services/ai-consulting'
-        />
-        <BentoCard
-        dark
-          eyebrow="Execution"
-          title={
-              <span>From strategy to live systems</span>
-          }
-          description="With the right AI opportunities,
-we build solutions that deliver
-business value.
- "
-          graphic={
-            <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-[url(/custommodel.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
-            </div>
-          }
-          fade={['bottom']}
-          className="lg:col-span-2"
-          href='/services/ai-consulting'
-        />
-        <BentoCard
-        dark
-          eyebrow="Future-proof"
-          title="We implement for the future"
-          description="Not only do build AI, but launch
-and maintain them, for new use
-cases and continued growth."
-          graphic={
-            <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-[url(/consulting.png)] bg-[size:1100px_650px] bg-[left_-300px_top_-200px] bg-no-repeat" />
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 opacity-100" />
-            </div>
-          }
-          fade={['bottom']}
-          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-r-4xl"
-          href='/services/ai-consulting'
-        />
-          {/* <BentoCard
-            dark
-            eyebrow="Meetings"
-            title="Smart call scheduling"
-            description="Automatically insert intro calls into your leads' calendars without their consent."
-            graphic={<LinkedAvatars />}
-            className="lg:col-span-2 lg:rounded-bl-4xl"
-          />
-          <BentoCard
-            dark
-            eyebrow="Engagement"
-            title="Become a thought leader"
-            description="5th BridgeAI automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader."
-            graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
-            }
-            fade={['top']}
-            className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
-          /> */}
-        </div>
-      </Container>
     </div>
   )
 }
@@ -248,7 +251,7 @@ cases and continued growth."
 function BentoSection2() {
   return (
     <div className='mt-32'>
-<Container>
+    <Container>
       <Subheading>Products</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
         Some of our offerings
@@ -256,7 +259,7 @@ function BentoSection2() {
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-1">
         
-<BentoCard
+        <BentoCard
             
             eyebrow="Human Resources"
             title="Have AI Answer all your employees' HR queries with 1stAskHR"
@@ -282,7 +285,6 @@ function BentoSection2() {
       </div>
     </Container>
     </div>
-    
   )
 }
 
@@ -295,7 +297,7 @@ export default function Home() {
           <LogoCloud />
         </Container> */}
         <div className="bg-gradient-to-b from-white via-gray-100 to-white py-32">
-          <BentoSection1 />
+          <BentoSection/>
           <DarkBentoSection />
           <BentoSection2/>
         </div>
