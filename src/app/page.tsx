@@ -129,7 +129,7 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Future-proof"
-          title="We implement solutions for the future"
+          title="We implement solutions for the future."
           description="Not only do build AI, but launch and maintain them, for new use cases and continued growth."
           graphic={
             <div
